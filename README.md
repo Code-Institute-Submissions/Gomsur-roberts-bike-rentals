@@ -25,3 +25,8 @@
    * [Attending Button](#attending-button)
    * [Comment Counter](#comment-counter)
    * [Comments](#comments)
+
+### SITE STRUCTURE ###
+* As a **user** I can **view a home page** so that **I can understand what the site is about**.
+* As a **user** I can **view an about page** so that **I can see what the site is about**.
+* As a **user** I can **click a link on the reserve page** so that **I can make a reservation of a bike**.
