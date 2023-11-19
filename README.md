@@ -55,3 +55,6 @@
 
 ### **Typography**
 - Fonts were selected for their simple and readable design to avoid distracting from the content.
+
+### **Wireframes**
+Wireframes for different views can be seen here:
