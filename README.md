@@ -59,7 +59,7 @@
 
 ### **Wireframes**
 Wireframes for different views can be seen here:
-![Mobile] (docs/images/Wireframe-phone.png)
+
 
 ## **Credits**
 - [The Code Institutes](https://codeinstitute.net/) 'I Think Therefore I Blog' project which inspired the main functionality of the blog.
