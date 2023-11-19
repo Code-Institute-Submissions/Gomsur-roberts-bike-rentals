@@ -30,3 +30,9 @@
 * As a **user** I can **view a home page** so that **I can understand what the site is about**.
 * As a **user** I can **view an about page** so that **I can see what the site is about**.
 * As a **user** I can **click a link on the reserve page** so that **I can make a reservation of a bike**.
+
+### CONTENT CREATION ###
+* As a **user** I can **create an account** so that **I can use the account to add content**.
+* As a **user** I can **add comments to an event when logged in** so that **I can add comments to an event**.
+* As a **user** I can **mark that I am attending an event** so that **I can show my interest in an event**.
+* As a **user** I can **see messages to let me know my action has been carried out** so that **I receive information about 
