@@ -51,7 +51,8 @@
 
 ### **Colours**
 - Colours were chosen to give the user a calm first impression.
-- Colours were selected using the coolors color palette generator.<br><br>
+- Background colour chosen: #FBF0D9
+- Button colour chosen: #5F4B32
 
 ### **Typography**
 - Fonts were selected for their simple and readable design to avoid distracting from the content.
