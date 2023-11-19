@@ -46,3 +46,9 @@
 - To provide controlled functionality based on a user's permissions.
 - To provide bike reservations
 - To provide essentials for your bike
+
+## **DESIGN**
+
+### **Colours**
+- Colours were chosen to give the user a calm first impression.
+- Colours were selected using the coolors color palette generator.<br><br>
