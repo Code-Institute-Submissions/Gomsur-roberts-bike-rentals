@@ -37,3 +37,12 @@
 ### SITE DESIGN ###
 * As an **unregistered user** I can **easily find out what the site is about** so that **I can decide if I want to explore further**.
 * As a **user** I can **want the site to be responsive** so that **I can view on different devices**.
+
+### **The Scope**
+
+#### **The Site's Main Goals:**
+- To provide users with a user-friendly and positive experience when using the site.
+- To provide users with a clear understanding of the site's purpose.
+- To provide controlled functionality based on a user's permissions.
+- To provide bike reservations
+- To provide essentials for your bike
