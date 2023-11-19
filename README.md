@@ -52,3 +52,6 @@
 ### **Colours**
 - Colours were chosen to give the user a calm first impression.
 - Colours were selected using the coolors color palette generator.<br><br>
+
+### **Typography**
+- Fonts were selected for their simple and readable design to avoid distracting from the content.
