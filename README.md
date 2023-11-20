@@ -73,11 +73,17 @@
 ### **Wireframes**
 Wireframes for different views can be seen here:
 
-#### **The Site's Main Goals:**
-- To provide the user with a user-friendly experience when visiting the site.
-- Provide the user with a clear indication of the sites purpose
-- To provide controlled functionality based on a user's permissions.
+### **Media**
+- [Balsamiq](https://balsamiq.com/) was used for the design of my wireframes.
 
+
+## **FEATURES**
+
+### **Navigation**
+#### **Desktop Navigation**
+- The navigation bar is located athe top of each page for the user to easily navigate to different pages.
+- Menu contains 'Home', 'About', 'Bike Accessories', 'Reserve Bike' and 'Login'
+- The navbar is fully responsive and collapses into a burger menu for mobile devices.
 
 
 
