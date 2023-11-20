@@ -33,6 +33,10 @@
  - [**Deployment**](#deployment)
  - [**Credits**](#credits)
 
+### ADMIN FEATURES ###
+* As a **manager of the site** I can **login to the admin panel** so that **I can manage the site**.
+* As an **admin** I can **edit bike-reservations**
+
 ### SITE STRUCTURE ###
 * As a **user** I can **view a home page** so that **I can understand what the site is about**.
 * As a **user** I can **view an about page** so that **I can see what the site is about**.
