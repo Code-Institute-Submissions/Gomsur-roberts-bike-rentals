@@ -1,6 +1,8 @@
 <h1>Roberts Bike Rental</h1>
 <p>Roberts bike rental is built for customers and end consumers to easily view the site, reserver a bike etc.</p>
 
+* Link to live project: http://104.248.100.154:8000/
+
 ## **TABLE OF CONTENTS**
 
  - [**User Experience (UX)**](#user-experience)
