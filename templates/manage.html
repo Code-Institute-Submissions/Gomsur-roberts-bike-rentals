@@ -1,0 +1,173 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>
+
+        Manage Rental Bikes / Robert's Bike Rentals
+
+    </title>
+
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+</head> 
+
+<body>
+
+
+<div>
+
+    <a href="/home">
+        <button type="button" class="btn btn-primary">
+            Home
+        </button>
+    </a>
+
+    <a href="/about-roberts-rentals">
+        <button type="button" class="btn btn-primary">
+            About
+        </button>
+    </a>
+
+    <a href="/bike-accessories">
+        <button type="button" class="btn btn-primary">
+            Bike Accessories
+        </button>
+    </a>
+
+    <a href="/bike/">
+        <button type="button" class="btn btn-primary">
+            Reserve Bike
+        </button>
+    </a>
+
+    <a href="/accounts/login/">
+        <button type="button" class="btn btn-secondary">
+            Log In
+        </button>
+    </a>
+
+</div>
+
+
+<h1>
+
+    Robert's Bike Rentals > Manage Rental Bikes <i>[admin]</i>
+
+</h1>
+
+<div>
+
+    <img src="{% static 'img/close-up-bicycle-gears.jpg' %}" height=480 width=640>
+
+</div>
+
+<p>
+
+Use this page to view our fleet of rental bikes. You can use this page to return bikes that have been rented by customers.
+
+</p>
+
+<div>
+<table class="center">
+<thead>
+<tr>						                            
+
+
+
+<th>Name</th>                           
+
+<th>Description</th>    
+<th>Rental Price</th>
+
+<th>Rental User ID</th>
+
+<th>Actions</th>
+
+</tr>
+</thead>
+<tbody >     
+
+{% if status_message %}
+
+<h4>
+
+{{ status_message }}
+
+</h4>
+
+{% endif %}
+  
+{% if latest_question_list %}
+
+{% for question in latest_question_list %}
+
+
+<tr>
+
+<td class=""> {{ question.name }} </td>
+<td class=""> {{ question.description }} </td>
+<td class=""> &euro; {{ question.rental_price }} </td>
+<td class=""> {{ question.rented_user_id }} </td>
+
+{% if question.rented_user_id != 0 %}
+
+<td class="">
+
+<a href="/bike/return/{{question.id}}/{{user.pk}}">
+
+<button type="button" class="btn btn-primary">
+
+Return bike: {{ question.name }}
+
+</button>
+
+</a>
+
+</td>
+
+{% else %}
+
+<td class="">
+
+<button type="button" class="btn btn-dark">
+
+Not currently rented by a customer.
+
+</button>
+
+</td>
+
+{% endif %}
+
+
+
+
+</tr>
+
+
+{% endfor %}
+
+</ul>
+
+{% else %}
+
+<h2>No bikes are available.</h2>
+{% endif %}
+
+</tbody>
+</table>
+</div>
+
+
+	<div class="footer">
+
+Robert's Bike Rental created by <a href="https://github.com/gomsur">Robert</a>. <a href="https://www.freepik.com/free-photo/cyclist-sunny-day-bike-adventure-travel-photo_3972810.htm#query=bike&position=0&from_view=search&track=sph">Image by jcomp</a> on Freepik.
+
+</div>
+</body>
+
+</html>

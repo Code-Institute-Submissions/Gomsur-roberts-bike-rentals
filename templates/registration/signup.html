@@ -1,0 +1,123 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>
+
+        Create Renter Account / Robert's Bike Rentals
+
+    </title>
+
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+</head> 
+
+<body>
+
+<div>
+
+    <a href="/home">
+        <button type="button" class="btn btn-primary">
+            Home
+        </button>
+    </a>
+
+    <a href="/about-roberts-rentals">
+        <button type="button" class="btn btn-primary">
+            About
+        </button>
+    </a>
+
+    <a href="/bike-accessories">
+        <button type="button" class="btn btn-primary">
+            Bike Accessories
+        </button>
+    </a>
+
+    <a href="/bike/">
+        <button type="button" class="btn btn-primary">
+            Reserve Bike
+        </button>
+    </a>
+
+    <a href="/accounts/login/">
+        <button type="button" class="btn btn-secondary">
+            Log In
+        </button>
+    </a>
+
+</div>
+
+<h1> Robert's Bike Rentals > Create Renter Account </h1>
+
+<div>
+
+    <img src="{% static 'img/woman-going-work-bicycle.jpg' %}" width=480 height=640>
+
+</div>
+<div class="register-page">
+
+    <div class="form">
+
+      <form class="register-form" method="POST" action="">
+
+        {% csrf_token %}
+
+        {{ form.errors }}
+
+        <h4>{{form.username.label}}</h4>
+
+<p>
+
+    Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.
+
+</p>
+        {{form.username}}
+
+<br/>
+<br/>
+
+        <h4>{{form.password1.label}}</h4>
+
+
+<p> 
+
+    Your password can’t be too similar to your other personal information.
+<br>
+
+  <br>  Your password must contain at least 8 characters.
+<br>    Your password can’t be a commonly used password.
+<br>    Your password can’t be entirely numeric.  </p>
+
+
+
+        {{form.password1}}
+
+    <br/>
+<br/>
+    <h4>{{form.password2.label}}</h4>
+
+<p> Password confirmation: Enter the same password as before, for verification. <p>
+        {{form.password2}}
+
+<br/><br/>
+        <button type="submit" class="btn btn-secondary"> Create Account</button>
+
+        <p class="message">Already registered? <a href="/accounts/login/">Log In</a>.</p>
+
+        </form>
+
+
+
+
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
