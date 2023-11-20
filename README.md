@@ -44,6 +44,8 @@
 
 ### CONTENT CREATION ###
 * As a **user** I can **make a reservation** so that **the reservation is saved**.
+* As a user I want to see what the site is about
+* As a user I want to easily navigate and find what im looking for
 
 ### SITE DESIGN ###
 * As an **unregistered user** I can **easily find out what the site is about** so that **I can decide if I want to explore further**.
@@ -70,6 +72,13 @@
 
 ### **Wireframes**
 Wireframes for different views can be seen here:
+
+#### **The Site's Main Goals:**
+- To provide the user with a user-friendly experience when visiting the site.
+- Provide the user with a clear indication of the sites purpose
+- To provide controlled functionality based on a user's permissions.
+
+
 
 
 ## **Credits**
