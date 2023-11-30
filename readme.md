@@ -12,7 +12,7 @@ Click the link below to access Robert's Bike Rentals and the bike collection.
 
 [Access Robert's Rental Bikes](http://104.248.100.154/)
 
-## Tech Stack
+## Robert's Bike Rentals Tech Stack
 
 robert's rental bikes is built with the following technologies.
 
@@ -32,7 +32,7 @@ robert's rental bikes is built with the following technologies.
 
     the app user interface is built html pages customized with liquid templating to render backend content.
 
-## Django Application Features & Goals
+## Robert's Bike Rentals Features & Goals
 
 ### Bike Rental Customer Goals
 
@@ -70,7 +70,7 @@ Features for site administration users of the robert's rental bikes django appli
 
     [`manage.py`] Can manage the store employee users in the django system
 
-## Django Application User Stories
+## Robert's Bike Rentals User Stories
 
 
 
@@ -85,19 +85,25 @@ Features for site administration users of the robert's rental bikes django appli
 
 
 
-
-
-### Administrative User Stories
-
-    * As a **manager of the site** I can **login to the admin panel** so that **I can manage the site**.
-
-    * As an **admin** I can **edit bike-reservations**
-
 ### Registered User Stories
 
 ### Authenticated User Stories
 
 ### Unregistered User Stories
+### Administrative User Stories
+
+
+### User Experience Stories
+
+* As a **user** I can **want the site to be responsive** so that **I can view on different devices**.
+
+
+
+
+    * As a **manager of the site** I can **login to the admin panel** so that **I can manage the site**.
+
+    * As an **admin** I can **edit bike-reservations**
+
 
     * As an **unregistered user** I can **easily find out what the site is about** so that **I can decide if I want to explore further**.
 
@@ -110,15 +116,22 @@ Features for site administration users of the robert's rental bikes django appli
     * As a user I want to see what the site is about
     * As a user I want to easily navigate and find what im looking for
 
-### User Experience Stories
-
-* As a **user** I can **want the site to be responsive** so that **I can view on different devices**.
-
 ## Known Bugs
 
 the following are bugs currently known within the robert's rental bikes application.
 
-    [`seeing bikes with new account`] the first time a new user logs in, they do not see available bikes to manage. The new user has to log out and then log back in then the bikes are available to view and manage.
+    [`new accounts`] on the first login for a new user, there are no bikes available to view or reserve.
+
+    `Solution` The new user has to log out and then log back in. Then the bikes are available to view and manage.
+
+## Credits
+
+image attribution
+
+tutorials
+
+bootswatch
+
 
 ## Quick Start Robert's Rental Bikes 
 
@@ -193,6 +206,6 @@ python3 manage.py runserver 0.0.0.0:8000
 
 ### open the app in the browser
 
-Use the link below to access the version of Robert's Bike Rentals running on localhost.
+Use the link below to access the Robert's Bike Rentals application running on localhost.
 
 [Robert's Rental Bikes (localhost)](http://localhost:8000/)
