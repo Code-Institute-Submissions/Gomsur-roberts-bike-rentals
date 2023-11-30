@@ -8,6 +8,8 @@ Robert's Bike Rentals is a responsive Django web application that allows users t
 
 Robert's Bike Rentals is hosted in the Digital Ocean Cloud for public use.
 
+Click the link below to access Robert's Bike Rentals and the bike collection.
+
 [Access Robert's Rental Bikes](http://104.248.100.154/)
 
 ## Tech Stack
@@ -37,13 +39,17 @@ robert's rental bikes is built with the following technologies.
 Features for end users of the robert's rental bikes django application:
 
     [`store info`] Guests can see bike rental store information
+
     [`store info`] Guests can see rental bike accessories
 
     [`accounts`] Guests can register a new account to reserve rental bikes
 
     [`bike rental`] Authenticated guests can view reservation status of all bikes
+
     [`bike rental`] Authenticated guests can reserve a rental bike
+
     [`bike rental`] Authenticated guests can view their reserved bike reservations
+
     [`bike rental`] Authenticated guests can cancel their reserved bike reservations
 
 ### Bike Rental Employee Goals
@@ -51,6 +57,7 @@ Features for end users of the robert's rental bikes django application:
 Features for employee users of the robert's rental bikes django application:
 
     [`crud`] Can manage rental bikes in the system
+
     [`crud`] Can manage bike reservations in the system
 
 ### Bike Rental Site Administrator Goals
@@ -173,13 +180,3 @@ python3 manage.py runserver 0.0.0.0:8000
 Use the link below to access the version of Robert's Bike Rentals running on localhost.
 
 [Robert's Rental Bikes (localhost)](http://localhost:8000/)
-
-## Reserve A Bike Today!
-
-![Reserve A Bike Today](http://104.248.100.154/static/img/close-up-bicycle-bell.jpg)
-
-Robert's Bike Rentals is online and ready for use.
-
-Click the link below to access Robert's Bike Rentals and our bike collection.
-
-[Robert's Rental Bikes](http://104.248.100.154/)
