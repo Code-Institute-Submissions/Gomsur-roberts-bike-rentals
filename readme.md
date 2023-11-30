@@ -26,11 +26,44 @@ robert's rental bikes is built with the following technologies.
 
     the app backend is django mvc.
 
-* `interface` { html bootstrap bootswatch django-templating }
+* `interface` { html bootstrap bootswatch liquid }
 
-    the app user interface is built html pages customized with django templating to render backend content.
+    the app user interface is built html pages customized with liquid templating to render backend content.
 
-## User Stories
+## Django Application Features & Goals
+
+### Bike Rental Customer Goals
+
+Features for end users of the robert's rental bikes django application:
+
+    [`store info`] Guests can see bike rental store information
+    [`store info`] Guests can see rental bike accessories
+
+    [`accounts`] Guests can register a new account to reserve rental bikes
+
+    [`bike rental`] Authenticated guests can view reservation status of all bikes
+    [`bike rental`] Authenticated guests can reserve a rental bike
+    [`bike rental`] Authenticated guests can view their reserved bike reservations
+    [`bike rental`] Authenticated guests can cancel their reserved bike reservations
+
+### Bike Rental Employee Goals
+
+Features for employee users of the robert's rental bikes django application:
+
+    [`crud`] Can manage rental bikes in the system
+    [`crud`] Can manage bike reservations in the system
+
+### Bike Rental Site Administrator Goals
+
+Features for site administration users of the robert's rental bikes django application:
+
+    [`cloud`] Can manage the resources in the digital ocean cloud
+
+    [`linux`] Can manage the system processes on the linux server
+
+    [`manage.py`] Can manage the store employee users in the django system
+
+## Django Application User Stories
 
 ### Administrative User Stories
 
