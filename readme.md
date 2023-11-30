@@ -72,11 +72,26 @@ Features for site administration users of the robert's rental bikes django appli
 
 ## Django Application User Stories
 
+
+
+
+### Bike Rental Customer Goals
+### Bike Rental Employee Goals
+### Bike Rental Site Administrator Goals
+
+
+
+
+
+
+
+
+
 ### Administrative User Stories
 
-* As a **manager of the site** I can **login to the admin panel** so that **I can manage the site**.
+    * As a **manager of the site** I can **login to the admin panel** so that **I can manage the site**.
 
-* As an **admin** I can **edit bike-reservations**
+    * As an **admin** I can **edit bike-reservations**
 
 ### Registered User Stories
 
@@ -84,16 +99,16 @@ Features for site administration users of the robert's rental bikes django appli
 
 ### Unregistered User Stories
 
-* As an **unregistered user** I can **easily find out what the site is about** so that **I can decide if I want to explore further**.
+    * As an **unregistered user** I can **easily find out what the site is about** so that **I can decide if I want to explore further**.
 
-* As a **user** I can **view a home page** so that **I can understand what the site is about**.
-* As a **user** I can **view an about page** so that **I can see what the site is about**.
+    * As a **user** I can **view a home page** so that **I can understand what the site is about**.
+    * As a **user** I can **view an about page** so that **I can see what the site is about**.
 
-* As a **user** I can **click a link on the reserve page** so that **I can make a reservation of a bike**.
+    * As a **user** I can **click a link on the reserve page** so that **I can make a reservation of a bike**.
 
-* As a **user** I can **make a reservation** so that **the reservation is saved**.
-* As a user I want to see what the site is about
-* As a user I want to easily navigate and find what im looking for
+    * As a **user** I can **make a reservation** so that **the reservation is saved**.
+    * As a user I want to see what the site is about
+    * As a user I want to easily navigate and find what im looking for
 
 ### User Experience Stories
 
@@ -101,8 +116,9 @@ Features for site administration users of the robert's rental bikes django appli
 
 ## Known Bugs
 
-[`seeing bikes with new account`] the first time a new user logs in, they do not see available bikes to manage. The new user has to log out and then log back in then the bikes are available to view and manage.
+the following are bugs currently known within the robert's rental bikes application.
 
+    [`seeing bikes with new account`] the first time a new user logs in, they do not see available bikes to manage. The new user has to log out and then log back in then the bikes are available to view and manage.
 
 ## Quick Start Robert's Rental Bikes 
 
