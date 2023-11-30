@@ -124,7 +124,66 @@ the following are bugs currently known within the robert's rental bikes applicat
 
 on the first login for a new user, there are no bikes available to view or reserve.
 
-    Solution: The new user has to log out and then log back in. Then the bikes are available to view and manage.
+Solution: The new user has to log out and then log back in. Then the bikes are available to view and manage.
+
+## Deployment Digital Ocean Linux Server
+
+Robert's Rental Bikes is hosted on an ubuntu linux server in the `Digital Ocean` cloud.
+
+### Ubuntu Linux Server
+
+The Ubuntu Linux Server has the following specs:
+
+    ip address / 104.248.100.154
+
+    os / ubuntu linux 22.04
+
+    ram / 2 GiB
+
+    cpu / 1 vCPU
+
+    disk / 50 GiB
+
+### Postgres Database
+
+A postgress database is used for backend storage.
+
+The postgress database uses docker compose to run:
+
+```yaml
+roberts-bike-rentals-postgres:
+    container_name: roberts-bike-rentals-postgres
+    image: postgres:14.1-alpine
+    user: root
+    environment:
+        - POSTGRES_USER=robertsrentals
+        - POSTGRES_DB=robertsbikerentals
+        - POSTGRES_PASSWORD=roberts!bike!rentals
+    ports:
+        - "5432:5432"
+```
+
+running the docker-compose script to start the database.
+
+```bash
+docker-compose up
+```
+
+see the running docker containers on the linux server.
+
+```bash
+docker ps
+```
+
+### Deploying Robert's Rental Bike Application
+
+The robert's rental bikes application is executed by pulling the robert's rental bikes source code from GitHub and executing the `quick-start.sh` script using the linux terminal.
+
+```bash
+sudo nohup ./quick-start.sh &
+```
+
+nohup runs the application in the background after disconnecting from the terminal. if you don't put nohup, then the app closes when you disconnect.
 
 ## Credits
 
@@ -175,7 +234,7 @@ install pip a tool for installing and managing python packages.
 sudo apt install -y python3-pip;
 ```
 
-### install python deps
+### install python packages
 
 install python packages using pip.
 
