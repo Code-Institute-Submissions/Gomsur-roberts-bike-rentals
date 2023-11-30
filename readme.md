@@ -117,7 +117,7 @@ sudo apt install -y python3-pip;
 
 ### install python deps
 
-install code deps using pip
+install python packages using pip.
 
 ```bash
 sudo set -xe \
@@ -126,18 +126,25 @@ sudo set -xe \
      && pip install django-cors-headers \
      && pip install psycopg2-binary \
      && pip install django-rest-auth-forked
+```
 
 ### make migrations
 
+```bash
 python3 manage.py makemigrations
+```
 
 ### apply migrations
 
+```bash
 python3 manage.py migrate
+```
 
 ### start the app
 
+```bash
 python3 manage.py runserver 0.0.0.0:8000
+```
 
 ### open the app in the browser
 
