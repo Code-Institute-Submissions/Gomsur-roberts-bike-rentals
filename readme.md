@@ -14,21 +14,21 @@ Robert's Bike Rentals is hosted in the Digital Ocean Cloud for public use.
 
 robert's rental bikes is built with the following technologies.
 
-* hosting { digital-ocean ubuntu }
+* `hosting` { digital-ocean ubuntu }
 
-the app is hosted on a linux server that runs the robert's rental bikes source code.
+    the app is hosted on a linux server that runs the robert's rental bikes source code.
 
-* database { postgres pgadmin4 }
+* `database` { postgres pgadmin4 }
 
-the app uses a postgres database. pgadmin is used to monitor and manage the postgres database.
+    the app uses a postgres database. pgadmin is used to monitor and manage the postgres database.
 
-* backend { django } 
+* `backend` { django } 
 
-the app backend is django mvc.
+    the app backend is django mvc.
 
-* interface { html bootstrap bootswatch django-templating }
+* `interface` { html bootstrap bootswatch django-templating }
 
-the app user interface is built html pages customized with django templating to render backend content.
+    the app user interface is built html pages customized with django templating to render backend content.
 
 ## User Stories
 
@@ -81,26 +81,45 @@ Click the link below to access Robert's Bike Rentals and our bike collection.
 
 You can run Robert's Rental Bikes at home. Follow the instructions below on an Ubuntu Linux server.
 
-### requirements
+### pre-requisite / postgres database
 
 you will need to start a postgres database running before starting the app. 
 
 ### clone the repo
 
-git clone http://....
+get the code from github.
 
+```bash
+git clone https://github.com/Gomsur/roberts-bike-rentals.git
+```
+
+enter the repo directory.
+
+```bash
 cd directory-name
+```
 
 ### update os packages
 
+update apt packages.
+
+```bash
 sudo apt-get update;
+```
 
 ### install pip
 
+install pip a tool for installing and managing python packages.
+
+```bash
 sudo apt install -y python3-pip;
+```
 
 ### install python deps
 
+install code deps using pip
+
+```bash
 sudo set -xe \
      && pip install 'Django<4.0' \
      && pip install djangorestframework \
