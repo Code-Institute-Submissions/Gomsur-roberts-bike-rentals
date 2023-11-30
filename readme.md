@@ -22,7 +22,7 @@ robert's rental bikes is built with the following technologies.
 
     the app uses a postgres database. pgadmin is used to monitor and manage the postgres database.
 
-* `backend` { django } 
+* `backend` { django4 } 
 
     the app backend is django mvc.
 
@@ -46,7 +46,6 @@ robert's rental bikes is built with the following technologies.
 
 * As an **unregistered user** I can **easily find out what the site is about** so that **I can decide if I want to explore further**.
 
-
 * As a **user** I can **view a home page** so that **I can understand what the site is about**.
 * As a **user** I can **view an about page** so that **I can see what the site is about**.
 
@@ -56,8 +55,6 @@ robert's rental bikes is built with the following technologies.
 * As a user I want to see what the site is about
 * As a user I want to easily navigate and find what im looking for
 
-
-
 ### User Experience Stories
 
 * As a **user** I can **want the site to be responsive** so that **I can view on different devices**.
@@ -66,15 +63,6 @@ robert's rental bikes is built with the following technologies.
 
 [`seeing bikes with new account`] the first time a new user logs in, they do not see available bikes to manage. The new user has to log out and then log back in then the bikes are available to view and manage.
 
-## Reserve A Bike Today!
-
-http://104.248.100.154/static/img/close-up-bicycle-bell.jpg
-
-Robert's Bike Rentals is online and ready for use.
-
-Click the link below to access Robert's Bike Rentals and our bike collection.
-
-[Robert's Rental Bikes](http://104.248.100.154/)
 
 ## Quick Start Robert's Rental Bikes 
 
@@ -152,3 +140,13 @@ python3 manage.py runserver 0.0.0.0:8000
 Use the link below to access the version of Robert's Bike Rentals running on localhost.
 
 [Robert's Rental Bikes (localhost)](http://localhost:8000/)
+
+## Reserve A Bike Today!
+
+http://104.248.100.154/static/img/close-up-bicycle-bell.jpg
+
+Robert's Bike Rentals is online and ready for use.
+
+Click the link below to access Robert's Bike Rentals and our bike collection.
+
+[Robert's Rental Bikes](http://104.248.100.154/)
