@@ -62,7 +62,6 @@ robert's rental bikes is built with the following technologies.
 
 * As a **user** I can **want the site to be responsive** so that **I can view on different devices**.
 
-
 ## Known Bugs
 
 [`seeing bikes with new account`] the first time a new user logs in, they do not see available bikes to manage. The new user has to log out and then log back in then the bikes are available to view and manage.
@@ -85,6 +84,8 @@ You can run Robert's Rental Bikes at home. Follow the instructions below on an U
 
 you will need to start a postgres database running before starting the app. 
 
+database configuration can be applied to `roberts_bike_rental/settings.py`.
+
 ### clone the repo
 
 get the code from github.
@@ -96,7 +97,7 @@ git clone https://github.com/Gomsur/roberts-bike-rentals.git
 enter the repo directory.
 
 ```bash
-cd directory-name
+cd roberts-bike-rentals
 ```
 
 ### update os packages
@@ -120,7 +121,7 @@ sudo apt install -y python3-pip;
 install python packages using pip.
 
 ```bash
-sudo set -xe \
+set -xe \
      && pip install 'Django<4.0' \
      && pip install djangorestframework \
      && pip install django-cors-headers \
