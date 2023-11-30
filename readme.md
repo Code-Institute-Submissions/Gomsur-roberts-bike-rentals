@@ -143,7 +143,7 @@ Use the link below to access the version of Robert's Bike Rentals running on loc
 
 ## Reserve A Bike Today!
 
-http://104.248.100.154/static/img/close-up-bicycle-bell.jpg
+![Reserve A Bike Today](http://104.248.100.154/static/img/close-up-bicycle-bell.jpg)
 
 Robert's Bike Rentals is online and ready for use.
 
