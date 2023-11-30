@@ -10,53 +10,43 @@ Robert's Bike Rentals is hosted in the Digital Ocean Cloud for public use.
 
 [Access Robert's Rental Bikes](http://104.248.100.154/)
 
-## **TABLE OF CONTENTS**
+## User Stories
 
- - [**User Experience (UX)**](#user-experience)
-    * [User Stories](#user-stories)
-    * [Agile Methodology](#agile-methodology)
-    * [The Scope](#the-scope)
- - [**Design**](#design)
-    * [Colours](#colours)
-    * [Typography](#typography)
-    * [Media](#media)
-    * [Wireframes](#wireframes)
-    * [Database Schema](#database-schema)
- - [**Features**](#features)
-   * [Navigation](#navigation)
-   * [Footer](#footer)
-   * [Home Page](#home-page)
-   * [Events Page](#events-page)
-   * [Event Details Page](#event-details-page)
-   * [Add Event Page](#add-event-page)
-   * [Edit Event Page](#edit-event-page)
-   * [Delete Event Page](#delete-event-page)
-   * [Attending Button](#attending-button)
-   * [Comment Counter](#comment-counter)
-   * [Comments](#comments)
+### Administrative User Stories
 
- - [**Testing**](#testing)
- - [**Technologies Used**](#technology-used)
- - [**Deployment**](#deployment)
- - [**Credits**](#credits)
-
-### ADMIN FEATURES ###
 * As a **manager of the site** I can **login to the admin panel** so that **I can manage the site**.
+
 * As an **admin** I can **edit bike-reservations**
 
-### SITE STRUCTURE ###
+### Registered User Stories
+
+### Authenticated User Stories
+
+### Unregistered User Stories
+
+* As an **unregistered user** I can **easily find out what the site is about** so that **I can decide if I want to explore further**.
+
+
 * As a **user** I can **view a home page** so that **I can understand what the site is about**.
 * As a **user** I can **view an about page** so that **I can see what the site is about**.
+
 * As a **user** I can **click a link on the reserve page** so that **I can make a reservation of a bike**.
 
-### CONTENT CREATION ###
 * As a **user** I can **make a reservation** so that **the reservation is saved**.
 * As a user I want to see what the site is about
 * As a user I want to easily navigate and find what im looking for
 
-### SITE DESIGN ###
-* As an **unregistered user** I can **easily find out what the site is about** so that **I can decide if I want to explore further**.
+
+
+### User Experience Stories
+
 * As a **user** I can **want the site to be responsive** so that **I can view on different devices**.
+
+### SITE STRUCTURE ###
+
+### CONTENT CREATION ###
+
+### SITE DESIGN ###
 
 ### **The Scope**
 
@@ -99,7 +89,13 @@ Wireframes for different views can be seen here:
 - [Stack Overflow](https://stackoverflow.com/) for help with errors encountered during development.
 - [W3Schools - Python](https://www.w3schools.com/python/) for reference and research.
 
+## Known Bugs
+
+[`seeing bikes with new account`] the first time a new user logs in, they do not see available bikes to manage. The new user has to log out and then log back in then the bikes are available to view and manage.
+
 ## Reserve A Bike Today!
+
+http://104.248.100.154/static/img/close-up-bicycle-bell.jpg
 
 Robert's Bike Rentals is online and ready for use.
 
