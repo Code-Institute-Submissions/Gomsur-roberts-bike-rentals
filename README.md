@@ -1,7 +1,8 @@
-<h1>Roberts Bike Rental</h1>
-<p>Roberts bike rental is built for customers and end consumers to easily view the site, reserver a bike etc.</p>
+# Robert's Bike Rentals
 
-* Link to live project: http://104.248.100.154:8000/
+Roberts bike rental is built for customers and end consumers to easily view the site, reserver a bike etc.
+
+* Link to live project: http://104.248.100.154/
 
 ## **TABLE OF CONTENTS**
 
@@ -91,3 +92,11 @@ Wireframes for different views can be seen here:
 - [The Code Institutes](https://codeinstitute.net/) 'I Think Therefore I Blog' project which inspired the main functionality of the blog.
 - [Stack Overflow](https://stackoverflow.com/) for help with errors encountered during development.
 - [W3Schools - Python](https://www.w3schools.com/python/) for reference and research.
+
+## Reserve A Bike Today!
+
+Robert's Bike Rentals is online and ready for use.
+
+Click the link below to access Robert's Bike Rentals and our bike collection.
+
+[Robert's Rental Bikes](http://104.248.100.154/)
