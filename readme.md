@@ -158,14 +158,6 @@ Wireframes for different views can be seen here:
 
 ![accessories page](/docs/screenshots/accessories.png)
 
-### reserve bikes page
-
-![reserve page](/docs/screenshots/reserve.png)
-
-### manage bikes page
-
-![manage page](/docs/screenshots/manage.png)
-
 ### login page
 
 ![login page](/docs/screenshots/login.png)
@@ -173,6 +165,14 @@ Wireframes for different views can be seen here:
 ### register page
 
 ![register page](/docs/screenshots/register.png)
+
+### reserve bikes page
+
+![reserve page](/docs/screenshots/reserve.png)
+
+### manage bikes page
+
+![manage page](/docs/screenshots/manage.png)
 
 ## Security For Robert's Bike Rentals
 
