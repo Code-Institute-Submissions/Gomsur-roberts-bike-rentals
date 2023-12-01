@@ -36,6 +36,8 @@ robert's rental bikes is built with the following technologies.
 
 ### Bike Rental Guest Goals
 
+![Robert's Bike Rental Home](/docs/screenshots/home.png)
+
 Features for end users of the robert's rental bikes django application:
 
     [`store info`] Guests can see bike rental store information
@@ -191,6 +193,8 @@ sudo nohup ./quick-start.sh &
 nohup runs the application in the background after disconnecting from the terminal. if you don't put nohup, then the app closes when you disconnect.
 
 ### preview robert's rental bikes
+
+![Robert's Bike Rental Home](/docs/screenshots/home.png)
 
 Robert's Bike Rentals is deployed and available for usage.
 
