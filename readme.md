@@ -148,29 +148,43 @@ Wireframes for different views can be seen here:
 
 ### home page
 
+the home page is the initial landing page for robert's rental bikes. the home provides text about robert's rental bikes and what we offer.
+
 ![home page](/docs/screenshots/home.png)
 
 ### about page
+
+the about page provides detail about robert's rental bikes. the about page has a call to action for the user to reserve a bike.
 
 ![about page](/docs/screenshots/about.png)
 
 ### accessories page
 
+the accessories page lists a static collection of accessories for the robert's bike rental users. the accessories page has a call to action for the user to reserve a bike.
+
 ![accessories page](/docs/screenshots/accessories.png)
 
 ### login page
+
+the login page is a standard login form. the user provides their username and password. the login page provides a call action to sign up for a new account.
 
 ![login page](/docs/screenshots/login.png)
 
 ### register page
 
+the register page is a standard register form. the user provides their username and password. the register page provides a call action to log in with an existing account.
+
 ![register page](/docs/screenshots/register.png)
 
 ### reserve bikes page
 
+the reserve page allows the user to see each of the bikes in the store and it's rentail availability. the reserve page allows the user to reserve a bike listed as available. the reserve page allows the users to cancel a currently reserved bike owned by them.
+
 ![reserve page](/docs/screenshots/reserve.png)
 
 ### manage bikes page
+
+the manage bikes page allows a super user to see each of the bikes in the store and it's rentail availability. the manage bikes page allows a super user to return a rental reservation made by a customer.
 
 ![manage page](/docs/screenshots/manage.png)
 
