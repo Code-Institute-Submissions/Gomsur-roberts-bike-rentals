@@ -70,14 +70,6 @@ https://github.com/ArtOfEngineer/PythonDjango-PostgreSQL-VueJS/tree/main
 - [insert]
 - [insert]
 
-## Tasks and Estimated Costs
-
-| Task | Estimated Costs | Notes |
-|------|-----------------|-------|
-|ex. Furniture|$1,000| |
-|Decorations|$250|*wall art*|
-|**TOTAL**|**$1,250**|*estimated*|
-
 
 ## Closing Checklist
 

@@ -105,6 +105,12 @@ Features for site administration users of the robert's rental bikes django appli
 
 * As a user I want to easily navigate and find what im looking for
 
+## wireframes
+
+...
+
+## workflow
+
 ## Security For Robert's Bike Rentals
 
 Robert's Bike Rentals has a few simple security rules.
@@ -203,6 +209,15 @@ Click the link below to access Robert's Bike Rentals.
 [Access Robert's Rental Bikes](http://104.248.100.154/)
 
 ## Credits
+
+
+|  |   |  |
+|------|-----------------|-------|
+|[Bootswatch](https://bootswatch.com/)|bootstrap compatible prebuild color theming and css| |
+|Decorations|$250|*wall art*|
+|**TOTAL**|**$1,250**|*estimated*|
+
+
 
 image attribution
 
