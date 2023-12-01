@@ -1,1 +1,0 @@
-<a href="https://www.freepik.com/free-photo/close-up-bicycle-bell_1008710.htm#query=bike%20shop&position=45&from_view=search&track=ais#position=45&query=bike%20shop">Image by peoplecreations</a> on Freepik
