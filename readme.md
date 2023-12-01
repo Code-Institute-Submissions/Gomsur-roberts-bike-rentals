@@ -105,6 +105,23 @@ Features for site administration users of the robert's rental bikes django appli
 
 * As a user I want to easily navigate and find what im looking for
 
+## **DESIGN**
+
+### **Colours**
+- Colours were chosen to give the user a calm first impression.
+- Background colour chosen: #FBF0D9
+- Button colour chosen: #5F4B32
+
+### **Typography**
+- Fonts were selected for their simple and readable design to avoid distracting from the content.
+
+### **Wireframes**
+Wireframes for different views can be seen here:
+
+### **Media**
+- [Balsamiq](https://balsamiq.com/) was used for the design of my wireframes.
+
+
 ## wireframes
 
 ...

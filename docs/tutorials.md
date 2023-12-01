@@ -69,3 +69,13 @@ https://docs.djangoproject.com/en/1.10/topics/http/shortcuts/#redirect
 ## super user only pages
 
 https://stackoverflow.com/questions/15998140/how-to-limit-a-view-to-superuser-only
+
+## tutorial that worked
+
+https://dev.to/jkaylight/django-rest-framework-with-postgresql-a-crud-tutorial-1l34
+
+http://138.197.59.152:5050/browser/
+
+https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-insert/
+
+https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-date/
