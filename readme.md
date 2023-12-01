@@ -144,7 +144,35 @@ Wireframes for different views can be seen here:
 
 ![Desktop Wireframes Bike Rental Home](/docs/wireframes/wireframe-desktop.png)
 
-## workflow
+## Robert's Rental Bike Store Pages
+
+### home page
+
+![home page](/docs/screenshots/home.png)
+
+### about page
+
+![about page](/docs/screenshots/about.png)
+
+### accessories page
+
+![accessories page](/docs/screenshots/accessories.png)
+
+### reserve bikes page
+
+![reserve page](/docs/screenshots/reserve.png)
+
+### manage bikes page
+
+![manage page](/docs/screenshots/manage.png)
+
+### login page
+
+![login page](/docs/screenshots/login.png)
+
+### register page
+
+![register page](/docs/screenshots/register.png)
 
 ## Security For Robert's Bike Rentals
 
