@@ -240,11 +240,11 @@ services:
         
             PGADMIN_DEFAULT_EMAIL: robert@robertsbikerentals.com
             
-            PGADMIN_DEFAULT_PASSWORD: robertsbikerentals
+            PGADMIN_DEFAULT_PASSWORD: roberts!bike!rentals
 
         volumes:
         
-            - ./volume/database-admin:/var/lib/pgadmin            
+            - ./volume/pgadmin4:/var/lib/pgadmin            
 ```
 
 running the docker-compose script to start the database.
