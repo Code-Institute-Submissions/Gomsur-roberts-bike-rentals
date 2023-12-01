@@ -34,7 +34,7 @@ robert's rental bikes is built with the following technologies.
 
 ## Robert's Bike Rentals Features & Goals
 
-### Bike Rental Customer Goals
+### Bike Rental Guest Goals
 
 Features for end users of the robert's rental bikes django application:
 
@@ -43,6 +43,8 @@ Features for end users of the robert's rental bikes django application:
     [`store info`] Guests can see rental bike accessories
 
     [`accounts`] Guests can register a new account to reserve rental bikes
+
+### Bike Rental Customer Goals
 
     [`bike rental`] Authenticated guests can view reservation status of all bikes
 
@@ -72,49 +74,34 @@ Features for site administration users of the robert's rental bikes django appli
 
 ## Robert's Bike Rentals User Stories
 
+### Bike Rental Guest User Stories
+### Bike Rental Customer User Stories
+### Bike Rental Employee User Stories
+### Bike Rental Site Administrator User Stories
+### Bike Rental User Experience Stories
 
 
-
-### Bike Rental Customer Goals
-### Bike Rental Employee Goals
-### Bike Rental Site Administrator Goals
-
-
-
-
-
-
-
-### Registered User Stories
-
-### Authenticated User Stories
-
-### Unregistered User Stories
-### Administrative User Stories
-
-
-### User Experience Stories
+### trash
 
 * As a **user** I can **want the site to be responsive** so that **I can view on different devices**.
 
+* As a **manager of the site** I can **login to the admin panel** so that **I can manage the site**.
 
+* As an **admin** I can **edit bike-reservations**
 
+* As an **unregistered user** I can **easily find out what the site is about** so that **I can decide if I want to explore further**.
 
-    * As a **manager of the site** I can **login to the admin panel** so that **I can manage the site**.
+* As a **user** I can **view a home page** so that **I can understand what the site is about**.
 
-    * As an **admin** I can **edit bike-reservations**
+* As a **user** I can **view an about page** so that **I can see what the site is about**.
 
+* As a **user** I can **click a link on the reserve page** so that **I can make a reservation of a bike**.
 
-    * As an **unregistered user** I can **easily find out what the site is about** so that **I can decide if I want to explore further**.
+* As a **user** I can **make a reservation** so that **the reservation is saved**.
 
-    * As a **user** I can **view a home page** so that **I can understand what the site is about**.
-    * As a **user** I can **view an about page** so that **I can see what the site is about**.
+* As a user I want to see what the site is about
 
-    * As a **user** I can **click a link on the reserve page** so that **I can make a reservation of a bike**.
-
-    * As a **user** I can **make a reservation** so that **the reservation is saved**.
-    * As a user I want to see what the site is about
-    * As a user I want to easily navigate and find what im looking for
+* As a user I want to easily navigate and find what im looking for
 
 ## Known Bugs
 
@@ -193,8 +180,7 @@ tutorials
 
 bootswatch
 
-dddd
-## Quick Start Robert's Rental Bikes 
+## Quick Start Installation
 
 You can run Robert's Rental Bikes at home. Follow the instructions below on an Ubuntu Linux server.
 
