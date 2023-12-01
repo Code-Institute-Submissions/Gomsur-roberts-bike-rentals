@@ -28,32 +28,30 @@ Click the link below to access Robert's Bike Rentals and the bike collection.
     + [Bike Rental Site Administrator User Stories](#bike-rental-site-administrator-user-stories)
   * [User Interface Design](#user-interface-design)
     + [Theming And Colors](#theming-and-colors)
-    + [wireframes](#wireframes)
+    + [Wire Frames](#wire-frames)
     + [Standard Mobile Page Wireframe](#standard-mobile-page-wireframe)
     + [Standard Desktop Page Wireframe](#standard-desktop-page-wireframe)
   * [Robert's Rental Bike Store Pages](#robert-s-rental-bike-store-pages)
-    + [home page](#home-page)
-    + [about page](#about-page)
-    + [accessories page](#accessories-page)
-    + [login page](#login-page)
-    + [register page](#register-page)
-    + [reserve bikes page](#reserve-bikes-page)
-    + [manage bikes page](#manage-bikes-page)
+    + [Home Page](#home-page)
+    + [About Page](#about-page)
+    + [Accessories Page](#accessories-page)
+    + [Login Page](#login-page)
+    + [Register Page](#register-page)
+    + [Reserve Bikes Page](#reserve-bikes-page)
+    + [Manage Bikes Page](#manage-bikes-page)
   * [Security For Robert's Bike Rentals](#security-for-robert-s-bike-rentals)
     + [Super Admin Users](#super-admin-users)
     + [Standard Authenticated Users](#standard-authenticated-users)
-  * [agile project management](#agile-project-management)
+  * [Agile Project Management](#agile-project-management)
   * [Known Bugs](#known-bugs)
-    + [new accounts can not view bikes to rent](#new-accounts-can-not-view-bikes-to-rent)
+    + [New Accounts Can Not View Bikes To Rent](#new-accounts-can-not-view-bikes-to-rent)
   * [Robert's Rental Bikes Deployment](#robert-s-rental-bikes-deployment)
     + [Ubuntu Linux Server](#ubuntu-linux-server)
     + [Deploy Postgres Database](#deploy-postgres-database)
     + [Deploying Robert's Rental Bike](#deploying-robert-s-rental-bike)
-    + [preview robert's rental bikes](#preview-robert-s-rental-bikes)
+    + [Preview Robert's Rental Bikes](#preview-robert-s-rental-bikes)
   * [Credits](#credits)
   * [Quick Start Installation](#quick-start-installation)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## Robert's Bike Rentals Tech Stack
 
@@ -173,7 +171,7 @@ The lumem theme can be found and downloaded here:
 https://bootswatch.com/lumen/
 ```
 
-### wireframes
+### Wire Frames
 
 Initial mockups of the robert's rental bikes application be found below.
 
@@ -191,43 +189,43 @@ Wireframes for different views can be seen here:
 
 ## Robert's Rental Bike Store Pages
 
-### home page
+### Home Page
 
 the home page is the initial landing page for robert's rental bikes. the home provides text about robert's rental bikes and what we offer.
 
 ![home page](/docs/screenshots/home.png)
 
-### about page
+### About Page
 
 the about page provides detail about robert's rental bikes. the about page has a call to action for the user to reserve a bike.
 
 ![about page](/docs/screenshots/about.png)
 
-### accessories page
+### Accessories Page
 
 the accessories page lists a static collection of accessories for the robert's bike rental users. the accessories page has a call to action for the user to reserve a bike.
 
 ![accessories page](/docs/screenshots/accessories.png)
 
-### login page
+### Login Page
 
 the login page is a standard login form. the user provides their username and password. the login page provides a call action to sign up for a new account.
 
 ![login page](/docs/screenshots/login.png)
 
-### register page
+### Register Page
 
 the register page is a standard register form. the user provides their username and password. the register page provides a call action to log in with an existing account.
 
 ![register page](/docs/screenshots/register.png)
 
-### reserve bikes page
+### Reserve Bikes Page
 
 the reserve page allows the user to see each of the bikes in the store and it's rentail availability. the reserve page allows the user to reserve a bike listed as available. the reserve page allows the users to cancel a currently reserved bike owned by them.
 
 ![reserve page](/docs/screenshots/reserve.png)
 
-### manage bikes page
+### Manage Bikes Page
 
 the manage bikes page allows a super user to see each of the bikes in the store and it's rentail availability. the manage bikes page allows a super user to return a rental reservation made by a customer.
 
@@ -251,7 +249,7 @@ Robert's Bike Rentals has a few simple security rules.
 
     [`authenticated`] authenticated user sessions are invalidated after two minutes of inactivity and the user must re-authenticate
 
-## agile project management
+## Agile Project Management
 
 Robert's rental bikes has an agile project tracking board with each of the user stories and their current progress.
 
@@ -263,7 +261,7 @@ Click the link below to view the agile board.
 
 the following are bugs currently known within the robert's rental bikes application.
 
-### new accounts can not view bikes to rent
+### New Accounts Can Not View Bikes To Rent
 
 	on the first login for a new user, there are no bikes available to view or reserve.
 
@@ -385,7 +383,7 @@ sudo nohup ./quick-start.sh &
 
 nohup runs the application in the background after disconnecting from the terminal. if you don't put nohup, then the app closes when you disconnect.
 
-### preview robert's rental bikes
+### Preview Robert's Rental Bikes
 
 ![Robert's Bike Rental Home](/docs/screenshots/home.png)
 
