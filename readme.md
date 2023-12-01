@@ -127,9 +127,9 @@ the following are bugs currently known within the robert's rental bikes applicat
 
 ### new accounts can not view bikes to rent
 
-on the first login for a new user, there are no bikes available to view or reserve.
+	on the first login for a new user, there are no bikes available to view or reserve.
 
-Solution: The new user has to log out and then log back in. Then the bikes are available to view and manage.
+	Solution: The new user has to log out and then log back in. Then the bikes are available to view and manage.
 
 ## Deployment Digital Ocean Linux Server
 
@@ -180,7 +180,7 @@ see the running docker containers on the linux server.
 docker ps
 ```
 
-### Deploying Robert's Rental Bike Application
+### Deploying Robert's Rental Bike
 
 The robert's rental bikes application is executed by pulling the robert's rental bikes source code from GitHub and executing the `quick-start.sh` script using the linux terminal.
 
@@ -189,6 +189,14 @@ sudo nohup ./quick-start.sh &
 ```
 
 nohup runs the application in the background after disconnecting from the terminal. if you don't put nohup, then the app closes when you disconnect.
+
+### preview robert's rental bikes
+
+Robert's Bike Rentals is deployed and available for usage.
+
+Click the link below to access Robert's Bike Rentals.
+
+[Access Robert's Rental Bikes](http://104.248.100.154/)
 
 ## Credits
 
@@ -205,11 +213,3 @@ You can run Robert's Rental Bikes at home.
 Follow the instructions below on an Ubuntu Linux server.
 
 [Quick Start Guide](/docs/quick-start.md)
-
-### preview robert's rental bikes
-
-Robert's Bike Rentals is deployed and available for usage.
-
-Click the link below to access Robert's Bike Rentals.
-
-[Access Robert's Rental Bikes](http://104.248.100.154/)
