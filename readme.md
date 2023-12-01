@@ -34,9 +34,9 @@ robert's rental bikes is built with the following technologies.
 
 ## Robert's Bike Rentals Features & Goals
 
-### Bike Rental Guest Goals
-
 ![Robert's Bike Rental Home](/docs/screenshots/home.png)
+
+### Bike Rental Guest Goals
 
 Features for end users of the robert's rental bikes django application:
 
@@ -109,6 +109,9 @@ Features for site administration users of the robert's rental bikes django appli
 
 ...
 
+![Mobile Wireframe](/docs/wireframes/wireframe-desktop.png)
+![Desktop Wireframes Bike Rental Home](/docs/wireframes/wireframe-mobile.png)
+
 ## workflow
 
 ## Security For Robert's Bike Rentals
@@ -128,6 +131,14 @@ Robert's Bike Rentals has a few simple security rules.
     [`authenticated`] only authenticated users can their own rentals
 
     [`authenticated`] authenticated user sessions are invalidated after two minutes of inactivity and the user must re-authenticate
+
+## agile project management
+
+Robert's rental bikes has an agile project tracking board with each of the user stories and their current progress.
+
+Click the link below to view the agile board.
+
+[Agile Project Management](/docs/agile.md)
 
 ## Known Bugs
 
@@ -164,16 +175,59 @@ A postgress database is used for backend storage.
 The postgress database uses docker compose to run:
 
 ```yaml
-roberts-bike-rentals-postgres:
-    container_name: roberts-bike-rentals-postgres
-    image: postgres:14.1-alpine
-    user: root
-    environment:
-        - POSTGRES_USER=robertsrentals
-        - POSTGRES_DB=robertsbikerentals
-        - POSTGRES_PASSWORD=roberts!bike!rentals
-    ports:
-        - "5432:5432"
+version: "3"
+
+services:
+
+    roberts-bike-rentals-postgres:
+
+        container_name: roberts-bike-rentals-postgres
+        
+        image: postgres:14.1-alpine
+
+        restart: always
+
+        user: root
+
+        environment:
+
+            - POSTGRES_USER=robertsbikerentals
+
+            - POSTGRES_DB=robertsbikerentals
+
+            - POSTGRES_PASSWORD=roberts!bike!rentals
+
+        ports:
+
+            - "5432:5432"
+
+        volumes: 
+
+            - ./volume/postres:/var/lib/postgresql/data
+ 
+    roberts-bike-rentals-pgadmin4:
+
+        container_name: roberts-bike-rentals-pgadmin4
+
+        user: root
+
+        image: dpage/pgadmin4
+        
+        restart: always
+
+        ports:
+        
+            - "5480:80"
+            
+        environment:
+        
+            PGADMIN_DEFAULT_EMAIL: robert@robertsbikerentals.com
+            
+            PGADMIN_DEFAULT_PASSWORD: robertsbikerentals
+
+        volumes:
+        
+            - ./volume/database-admin:/var/lib/pgadmin            
 ```
 
 running the docker-compose script to start the database.
@@ -209,6 +263,8 @@ Click the link below to access Robert's Bike Rentals.
 [Access Robert's Rental Bikes](http://104.248.100.154/)
 
 ## Credits
+
+The Robert's rental bike application was build w/ help from the following resources across the internet.
 
 | website | how the site helped |
 |---------|---------------------|
