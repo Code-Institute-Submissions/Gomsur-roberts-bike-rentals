@@ -103,6 +103,20 @@ Features for site administration users of the robert's rental bikes django appli
 
 * As a user I want to easily navigate and find what im looking for
 
+## Security For Robert's Bike Rentals
+
+Robert's Bike Rentals has a few simple security rules.
+
+    [`superadmins`] only superadmins can manage bikes and accounts
+
+    [`superadmins`] only superadmins may return other user's rentals
+
+    [`authenticated`] only authenticated users can reserve a bike
+
+    [`authenticated`] only authenticated users can their own rentals
+
+    [`authenticated`] authenticated user sessions are invalidated after two minutes of inactivity and the user must re-authenticate
+
 ## Known Bugs
 
 the following are bugs currently known within the robert's rental bikes application.
