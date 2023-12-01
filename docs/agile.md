@@ -6,6 +6,8 @@ This is the Robert's rental bikes agile project tracking board with each of the 
 
 ### Bike Rental Guest User Stories
 
+the activity and progress of activities for bike rental guests.
+
 |backlog|in scope|in progress|in review|completed|
 |-------|--------|-----------|---------|---------|
 |||||As a bike rental guest i can see information about the bike rental store so that i can make an informed decision about rental bikes|
@@ -15,6 +17,8 @@ This is the Robert's rental bikes agile project tracking board with each of the 
 
 ### Bike Rental Customer User Stories
 
+the activity and progress of authenticated customers for bike rental guests.
+
 |backlog|in scope|in progress|in review|completed|
 |-------|--------|-----------|---------|---------|
 |||||As a bike rental customer i can view the reservation status of all bikes so that i can select a rental bike available for purchase
@@ -23,6 +27,7 @@ This is the Robert's rental bikes agile project tracking board with each of the 
 
 ### Bike Rental Employee User Stories
 
+the activity and progress of activities for bike rental employees and super users.
 |backlog|in scope|in progress|in review|completed|
 |-------|--------|-----------|---------|---------|
 |||||As a bike rental employee i can manage the rental bikes in the systems so that i modify rental bikes as needed
@@ -30,6 +35,8 @@ This is the Robert's rental bikes agile project tracking board with each of the 
 |||||As a bike rental employee i can return a customer's rental bike so that assist our customer with bike reservations
 
 ### Bike Rental Site Administrator User Stories
+
+the activity and progress of activities for site administrator users.
 
 |backlog|in scope|in progress|in review|completed|
 |-------|--------|-----------|---------|---------|
