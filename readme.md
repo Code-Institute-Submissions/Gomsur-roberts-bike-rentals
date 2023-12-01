@@ -46,15 +46,15 @@ Features for end users of the robert's rental bikes django application:
 
     [`accounts`] Guests can register a new account to reserve rental bikes
 
+    [`accounts`] Guests can login in to existing account to reserve rental bikes
+
 ### Bike Rental Customer Goals
 
-    [`bike rental`] Authenticated guests can view reservation status of all bikes
+    [`bike rental`] Authenticated customers can view reservation status of all bikes
 
-    [`bike rental`] Authenticated guests can reserve a rental bike
+    [`bike rental`] Authenticated customers can reserve a rental bike
 
-    [`bike rental`] Authenticated guests can view their reserved bike reservations
-
-    [`bike rental`] Authenticated guests can cancel their reserved bike reservations
+    [`bike rental`] Authenticated customers can cancel their reserved bike reservations
 
 ### Bike Rental Employee Goals
 
@@ -77,43 +77,48 @@ Features for site administration users of the robert's rental bikes django appli
 ## Robert's Bike Rentals User Stories
 
 ### Bike Rental Guest User Stories
+
+    As a bike rental guest i can see information about the bike rental store so that i can make an informed decision about rental bikes
+
+    As a bike rental guest i can see rental bike accessories so that i can know my options for accessories for my rental bike
+
+    As a bike rental guest i can create a new account with robert's bike rentals so that i can manage bike rentals
+
+    As a bike rental guest i can log in an existing account on robert's bike rentals so that i can reserve a rental bike
+
 ### Bike Rental Customer User Stories
+
+    As a bike rental customer i can view the reservation status of all bikes so that i can select a rental bike available for purchase
+
+    As a bike rental customer i can reserve an available rental bike so that i can use this rental bike as a later time
+
+    As a bike rental customer i can cancel a previously made rental bike reservation so that i can return a rental bike i do not need
+
 ### Bike Rental Employee User Stories
+
+    As a bike rental employee i can manage the rental bikes in the systems so that i modify rental bikes as needed
+
+    As a bike rental employee i can manage the bike reservations in the system so that i can get see which bikes are rented
+
+    As a bike rental employee i can return a customer's rental bike so that assist our customer with bike reservations
+
 ### Bike Rental Site Administrator User Stories
-### Bike Rental User Experience Stories
 
+    As a bike rental site administrator i can manage the digital ocean cloud resources so that servers can be turned on and off
 
-### trash
+    As a bike rental site administrator i can manage the linux server processes so that databases and applications can be turned on and off
 
-* As a **user** I can **want the site to be responsive** so that **I can view on different devices**.
-
-* As a **manager of the site** I can **login to the admin panel** so that **I can manage the site**.
-
-* As an **admin** I can **edit bike-reservations**
-
-* As an **unregistered user** I can **easily find out what the site is about** so that **I can decide if I want to explore further**.
-
-* As a **user** I can **view a home page** so that **I can understand what the site is about**.
-
-* As a **user** I can **view an about page** so that **I can see what the site is about**.
-
-* As a **user** I can **click a link on the reserve page** so that **I can make a reservation of a bike**.
-
-* As a **user** I can **make a reservation** so that **the reservation is saved**.
-
-* As a user I want to see what the site is about
-
-* As a user I want to easily navigate and find what im looking for
+    As a bike rental site administrator i can manage the superadmins in the django application so that store employees can be created
 
 ## User Interface Design
 
 Robert's Rental Bikes uses standard html pages with liquid template.
 
-In the following sections are details about the interface, it's design, and considerations.
+below are details about the interface, it's design, and considerations.
 
 ### Theming And Colors
 
-Colors for Robert's rental bikes were chosen from options on bootswap.
+Colors for Robert's rental bikes were chosen from options on bootswatch.
 
 Bootswatch provides the color theming used across the application.
 
@@ -133,11 +138,11 @@ Wireframes for different views can be seen here:
 
 ### Standard Mobile Page Wireframe 
 
-![Mobile Wireframe](/docs/wireframes/wireframe-desktop.png)
+![Mobile Wireframe](/docs/wireframes/wireframe-mobile.png)
 
 ### Standard Desktop Page Wireframe
 
-![Desktop Wireframes Bike Rental Home](/docs/wireframes/wireframe-mobile.png)
+![Desktop Wireframes Bike Rental Home](/docs/wireframes/wireframe-desktop.png)
 
 ## workflow
 
