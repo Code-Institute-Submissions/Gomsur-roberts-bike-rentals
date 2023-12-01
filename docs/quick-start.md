@@ -2,6 +2,8 @@
 
 You can run Robert's Rental Bikes at home. Follow the instructions below on an Ubuntu Linux server.
 
+![Robert's Bike Rental](http://104.248.100.154/static/img/bike-shop-concept-with-bicycles.jpg)
+
 ### postgres database
 
 you will need to start a postgres database running before starting the app. A postgress database is used for backend storage.

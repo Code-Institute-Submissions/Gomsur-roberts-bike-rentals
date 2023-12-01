@@ -12,6 +12,36 @@ Click the link below to access Robert's Bike Rentals and the bike collection.
 
 [Access Robert's Rental Bikes](http://104.248.100.154/)
 
+## **TABLE OF CONTENTS**
+
+ - [**User Experience (UX)**](#user-experience)
+    * [User Stories](#user-stories)
+    * [Agile Methodology](#agile-methodology)
+    * [The Scope](#the-scope)
+ - [**Design**](#design)
+    * [Colours](#colours)
+    * [Typography](#typography)
+    * [Media](#media)
+    * [Wireframes](#wireframes)
+    * [Database Schema](#database-schema)
+ - [**Features**](#features)
+   * [Navigation](#navigation)
+   * [Footer](#footer)
+   * [Home Page](#home-page)
+   * [Events Page](#events-page)
+   * [Event Details Page](#event-details-page)
+   * [Add Event Page](#add-event-page)
+   * [Edit Event Page](#edit-event-page)
+   * [Delete Event Page](#delete-event-page)
+   * [Attending Button](#attending-button)
+   * [Comment Counter](#comment-counter)
+   * [Comments](#comments)
+
+ - [**Testing**](#testing)
+ - [**Technologies Used**](#technology-used)
+ - [**Deployment**](#deployment)
+ - [**Credits**](#credits)
+
 ## Robert's Bike Rentals Tech Stack
 
 robert's rental bikes is built with the following technologies.
@@ -126,7 +156,9 @@ Robert's rental bikes uses the `lumen` theme set.
 
 The lumem theme can be found and downloaded here:
 
-![Lumen Bootswatch Theme](https://bootswatch.com/lumen/)
+```
+https://bootswatch.com/lumen/
+```
 
 ### wireframes
 
@@ -222,7 +254,9 @@ the following are bugs currently known within the robert's rental bikes applicat
 
 	on the first login for a new user, there are no bikes available to view or reserve.
 
-	Solution: The new user has to log out and then log back in. Then the bikes are available to view and manage.
+	Solution #1: The new user has to log out and then log back in. Then the bikes are available to view and manage.
+
+	Solution #2: The new user needs to manually click on the 'reserve bike` link.
 
 ## Robert's Rental Bikes Deployment
 
