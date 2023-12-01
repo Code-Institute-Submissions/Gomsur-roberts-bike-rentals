@@ -105,28 +105,38 @@ Features for site administration users of the robert's rental bikes django appli
 
 * As a user I want to easily navigate and find what im looking for
 
-## **DESIGN**
+## User Interface Design
 
-### **Colours**
-- Colours were chosen to give the user a calm first impression.
-- Background colour chosen: #FBF0D9
-- Button colour chosen: #5F4B32
+Robert's Rental Bikes uses standard html pages with liquid template.
 
-### **Typography**
-- Fonts were selected for their simple and readable design to avoid distracting from the content.
+In the following sections are details about the interface, it's design, and considerations.
 
-### **Wireframes**
+### Theming And Colors
+
+Colors for Robert's rental bikes were chosen from options on bootswap.
+
+Bootswatch provides the color theming used across the application.
+
+Robert's rental bikes uses the `lumen` theme set.
+
+The lumem theme can be found and downloaded here:
+
+![Lumen Bootswatch Theme](https://bootswatch.com/lumen/)
+
+### wireframes
+
+Initial mockups of the robert's rental bikes application be found below.
+
+the initial design focused on a simple menu, vivid imagery, and multiple calls to actions.
+
 Wireframes for different views can be seen here:
 
-### **Media**
-- [Balsamiq](https://balsamiq.com/) was used for the design of my wireframes.
-
-
-## wireframes
-
-...
+### Standard Mobile Page Wireframe 
 
 ![Mobile Wireframe](/docs/wireframes/wireframe-desktop.png)
+
+### Standard Desktop Page Wireframe
+
 ![Desktop Wireframes Bike Rental Home](/docs/wireframes/wireframe-mobile.png)
 
 ## workflow
@@ -167,7 +177,7 @@ the following are bugs currently known within the robert's rental bikes applicat
 
 	Solution: The new user has to log out and then log back in. Then the bikes are available to view and manage.
 
-## Deployment Digital Ocean Linux Server
+## Robert's Rental Bikes Deployment
 
 Robert's Rental Bikes is hosted on an ubuntu linux server in the `Digital Ocean` cloud.
 
@@ -185,7 +195,7 @@ The Ubuntu Linux Server has the following specs:
 
     disk / 50 GiB
 
-### Postgres Database
+### Deploy Postgres Database
 
 A postgress database is used for backend storage.
 
@@ -250,7 +260,7 @@ services:
 running the docker-compose script to start the database.
 
 ```bash
-docker-compose up
+docker-compose up -d
 ```
 
 see the running docker containers on the linux server.
@@ -262,6 +272,18 @@ docker ps
 ### Deploying Robert's Rental Bike
 
 The robert's rental bikes application is executed by pulling the robert's rental bikes source code from GitHub and executing the `quick-start.sh` script using the linux terminal.
+
+get the code from github.
+
+```bash
+git clone https://github.com/Gomsur/roberts-bike-rentals.git
+```
+
+enter the repo directory.
+
+```bash
+cd roberts-bike-rentals
+```
 
 ```bash
 sudo nohup ./quick-start.sh &
