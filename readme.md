@@ -107,9 +107,13 @@ Features for site administration users of the robert's rental bikes django appli
 
 Robert's Bike Rentals has a few simple security rules.
 
+### Super Admin Users
+
     [`superadmins`] only superadmins can manage bikes and accounts
 
     [`superadmins`] only superadmins may return other user's rentals
+
+### Standard Authenticated Users
 
     [`authenticated`] only authenticated users can reserve a bike
 
