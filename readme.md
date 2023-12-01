@@ -343,7 +343,7 @@ The Robert's rental bike application was build w/ help from the following resour
 |[Bootswatch](https://bootswatch.com/)|bootstrap compatible prebuild color theming and css|
 |[Digital Ocean](https://www.digitalocean.com/community/tutorials)|cloud server hosting and tutorials|
 |[Internet Tutorials](/docs/tutorials.md)|various tutorials from the internet with how-to help and information|
-|[Stock Imagery](/docs/attrition.md)|free stock imagery from the internet, with attrition.|
+|[Stock Imagery](/docs/attribution.md)|free stock imagery from the internet, with attribution.|
 
 ## Quick Start Installation
 
