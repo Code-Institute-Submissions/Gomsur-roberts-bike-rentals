@@ -19,9 +19,9 @@ from django.shortcuts import reverse
 
 class BikeCreate(generics.CreateAPIView):
 
-	queryset = Bike.objects.all(),
+    queryset = Bike.objects.all(),
 
-	serializer_class = BikeSerializer
+    serializer_class = BikeSerializer
 
 class BikeList(generics.ListAPIView):
 
