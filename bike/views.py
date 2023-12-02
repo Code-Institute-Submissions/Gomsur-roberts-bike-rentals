@@ -73,7 +73,7 @@ def vote(request, question_id):
 
     context = {
        "latest_question_list": latest_question_list,
-        "status_message": ("You have successfull reserved the %s." % t.name),
+      "status_message": ("You have successfull reserved the %s." % t.name),
     }
 
     if request.user.is_superuser:
