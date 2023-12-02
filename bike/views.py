@@ -77,7 +77,7 @@ def vote(request, question_id):
     }
 
     if request.user.is_superuser:
-    
+
         template = loader.get_template("manage.html")
 
     else:
@@ -92,12 +92,12 @@ def vote(request, question_id):
 
     context = {
        "latest_question_list": latest_question_list,
-        "status_message": ("You have successfull reserved the %s." % t.name),
+      "status_message": ("You have successfull reserved the %s." % t.name),
     }
 
     return HttpResponse(template.render(context, request))
 
-def returnBike(request, pk, user_pk):
+    def returnBike(request, pk, user_pk):
 
     t = Bike.objects.get(id=pk)
 
