@@ -23,23 +23,23 @@ class BikeCreate(generics.CreateAPIView):
 
     serializer_class = BikeSerializer
 
-class BikeList(generics.ListAPIView):
+    class BikeList(generics.ListAPIView):
 
-    queryset = Bike.objects.all()
+        queryset = Bike.objects.all()
 
-    serializer_class = BikeSerializer
+        serializer_class = BikeSerializer
 
-class BikeDetail(generics.RetrieveAPIView):
+    class BikeDetail(generics.RetrieveAPIView):
 
-    queryset = Bike.objects.all()
+        queryset = Bike.objects.all()
 
-    serializer_class = BikeSerializer
+        serializer_class = BikeSerializer
 
-class BikeUpdate(generics.RetrieveUpdateAPIView):
+    class BikeUpdate(generics.RetrieveUpdateAPIView):
 
-    queryset = Bike.objects.all()
+        queryset = Bike.objects.all()
 
-    serializer_class = BikeSerializer
+        serializer_class = BikeSerializer
 
 class BikeDelete(generics.RetrieveDestroyAPIView):
 
