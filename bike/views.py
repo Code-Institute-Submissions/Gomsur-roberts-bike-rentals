@@ -115,7 +115,7 @@ def vote(request, question_id):
     }
 
     if request.user.is_superuser:
-    
+
         template = loader.get_template("manage.html")
 
     else:
@@ -124,7 +124,7 @@ def vote(request, question_id):
 
     return HttpResponse(template.render(context, request))
 
-@login_required
+    @login_required
 def custom(request):
     print("custom custom custom")
 
@@ -136,7 +136,7 @@ def custom(request):
     }
 
     if request.user.is_superuser:
-    
+
         template = loader.get_template("manage.html")
 
     else:
@@ -145,9 +145,9 @@ def custom(request):
 
     return HttpResponse(template.render(context, request))
 
-def about(request):
+    def about(request):
 
-    print("aboutpage aboutpage aboutpage")
+        print("aboutpage aboutpage aboutpage")
 
     template = loader.get_template("about.html")
 
