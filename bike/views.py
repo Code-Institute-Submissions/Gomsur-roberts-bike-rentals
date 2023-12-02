@@ -99,11 +99,11 @@ def vote(request, question_id):
 
     def returnBike(request, pk, user_pk):
 
-    t = Bike.objects.get(id=pk)
+        t = Bike.objects.get(id=pk)
 
     t.rented_user_id = 0  # change field
 
-    t.save() # this will update only
+    t.save()  # this will update only
 
     ##
 
@@ -111,7 +111,7 @@ def vote(request, question_id):
 
     context = {
        "latest_question_list": latest_question_list,
-        "status_message": ("You have successfull returned the %s." % t.name),
+       "status_message": ("You have successfull returned the %s." % t.name),
     }
 
     if request.user.is_superuser:
