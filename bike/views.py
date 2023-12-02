@@ -158,3 +158,4 @@ def custom(request):
     }
 
     return HttpResponse(template.render(context, request))
+ 
