@@ -41,14 +41,14 @@ class BikeCreate(generics.CreateAPIView):
 
         serializer_class = BikeSerializer
 
-class BikeDelete(generics.RetrieveDestroyAPIView):
+    class BikeDelete(generics.RetrieveDestroyAPIView):
 
-    queryset = Bike.objects.all()
+        queryset = Bike.objects.all()
 
-    serializer_class = BikeSerializer
+        serializer_class = BikeSerializer
 
-def detail(request, question_id):
-    return HttpResponse("You're looking at question %s." % question_id)
+    def detail(request, question_id):
+        return HttpResponse("You're looking at question %s." % question_id)
 
 
 def results(request, question_id):
@@ -59,9 +59,9 @@ def results(request, question_id):
 def vote(request, question_id):
     return HttpResponse("You're voting on question %s." % question_id)
 
-def reserveBike(request, pk, user_pk):
+    def reserveBike(request, pk, user_pk):
 
-    t = Bike.objects.get(id=pk)
+        t = Bike.objects.get(id=pk)
 
     t.rented_user_id = user_pk  # change field
 
