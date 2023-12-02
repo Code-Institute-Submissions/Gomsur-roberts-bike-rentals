@@ -11,10 +11,10 @@ from django.shortcuts import reverse
 # https://docs.djangoproject.com/en/4.2/intro/tutorial03/
 
 
-## user = User(username=new_data['username'], email=new_data['email'], 
-## first_name=new_data['email'])
-## user.save()
-## user_id = user.id
+# user = User(username=new_data['username'], email=new_data['email'],
+# first_name=new_data['email'])
+# user.save()
+# user_id = user.id
 
 
 class BikeCreate(generics.CreateAPIView):
