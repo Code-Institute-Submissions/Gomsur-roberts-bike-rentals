@@ -8,7 +8,7 @@ from django.contrib.auth.decorators import login_required
 
 from django.shortcuts import redirect
 from django.shortcuts import reverse
-## https://docs.djangoproject.com/en/4.2/intro/tutorial03/
+# https://docs.djangoproject.com/en/4.2/intro/tutorial03/
 
 
 ## user = User(username=new_data['username'], email=new_data['email'], 
