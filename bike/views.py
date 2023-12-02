@@ -65,7 +65,7 @@ def vote(request, question_id):
 
     t.rented_user_id = user_pk  # change field
 
-    t.save() # this will update only
+    t.save()  # this will update only
 
     ##
 
