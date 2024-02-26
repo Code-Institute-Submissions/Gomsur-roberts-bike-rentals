@@ -45,6 +45,7 @@ Click the link below to access Robert's Bike Rentals and the bike collection.
   * [Agile Project Management](#agile-project-management)
   * [Known Bugs](#known-bugs)
   * [Features](#features)
+  * [Responsive](#responsive)
   * [Robert's Rental Bikes Deployment](#robert-s-rental-bikes-deployment)
     + [Ubuntu Linux Server](#ubuntu-linux-server)
     + [Deploy SQLite Database](#deploy-sqlite-database)
@@ -283,6 +284,11 @@ There is a couple of features that could be implemented
 * Add a payment method for reserving a bike
 * Possibility to add a blog page to the site to engage the customers
 * Start a loyalty club to gather the bike interested people
+
+### Responsive
+
+Responsiveness was checked with [Browserstack](https://www.browserstack.com/responsive)
+![phone](/docs/screenshots/responsivephone.png)
 
 ## Robert's Rental Bikes Deployment
 
