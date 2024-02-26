@@ -120,7 +120,7 @@ Features for site administration users of the robert's rental bikes django appli
 
 ## Robert's Bike Rentals User Stories
 
-Agile for user stories can be found under PROJECTS or ![here](https://github.com/users/Gomsur/projects/7)
+Agile for user stories can be found under PROJECTS or [here](https://github.com/users/Gomsur/projects/7)
 
 ### Bike Rental Guest User Stories
 
