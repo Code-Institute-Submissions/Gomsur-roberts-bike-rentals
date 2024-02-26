@@ -46,7 +46,7 @@ Click the link below to access Robert's Bike Rentals and the bike collection.
     + [New Accounts Can Not View Bikes To Rent](#new-accounts-can-not-view-bikes-to-rent)
   * [Robert's Rental Bikes Deployment](#robert-s-rental-bikes-deployment)
     + [Ubuntu Linux Server](#ubuntu-linux-server)
-    + [Deploy Postgres Database](#deploy-postgres-database)
+    + [Deploy SQLite Database](#deploy-sqlite-database)
     + [Deploying Robert's Rental Bike](#deploying-robert-s-rental-bike)
     + [Preview Robert's Rental Bikes](#preview-robert-s-rental-bikes)
   * [Credits](#credits)
@@ -258,7 +258,7 @@ Robert's Bike Rentals has a few simple security rules.
 
 Robert's rental bikes has an agile project tracking board with each of the user stories and their current progress.
 
-The agile board can be found under PROJECTS in Github
+The agile board can be found under PROJECTS in Github and have been done in 3 steps.
 
 Click the link below to view the agile board.
 
@@ -294,11 +294,11 @@ The Ubuntu Linux Server has the following specs:
 
     disk / 50 GiB
 
-### Deploy Postgres Database
+### Deploy SQLite Database
 
-A postgress database is used for backend storage.
+A SQLite database is used for backend storage.
 
-The postgress database uses docker compose to run:
+The SQLite database uses docker compose to run:
 
 ```yaml
 version: "3"
