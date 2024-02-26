@@ -258,9 +258,11 @@ Robert's Bike Rentals has a few simple security rules.
 
 Robert's rental bikes has an agile project tracking board with each of the user stories and their current progress.
 
+The agile board can be found under PROJECTS in Github
+
 Click the link below to view the agile board.
 
-[Agile Project Management](/docs/agile.md)
+[Agile Project Management](https://github.com/Gomsur/roberts-bike-rentals/projects?query=is%3Aopen)
 
 ## Known Bugs
 
