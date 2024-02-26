@@ -44,7 +44,7 @@ Click the link below to access Robert's Bike Rentals and the bike collection.
     + [Standard Authenticated Users](#standard-authenticated-users)
   * [Agile Project Management](#agile-project-management)
   * [Known Bugs](#known-bugs)
-    + [New Accounts Can Not View Bikes To Rent](#new-accounts-can-not-view-bikes-to-rent)
+  * [Features](#features)
   * [Robert's Rental Bikes Deployment](#robert-s-rental-bikes-deployment)
     + [Ubuntu Linux Server](#ubuntu-linux-server)
     + [Deploy SQLite Database](#deploy-sqlite-database)
@@ -273,15 +273,14 @@ Click the link below to view the agile board.
 
 ## Known Bugs
 
-the following are bugs currently known within the robert's rental bikes application.
+There's no known bugs on the site.
 
-### New Accounts Can Not View Bikes To Rent
+## Features
 
-	on the first login for a new user, there are no bikes available to view or reserve.
-
-	Solution #1: The new user has to log out and then log back in. Then the bikes are available to view and manage.
-
-	Solution #2: The new user needs to manually click on the 'reserve bike` link.
+There is a couple of features that could be implemented such as:
+* More bikes
+* Adding more products and images to accessories page
+* Add a payment method for booking
 
 ## Robert's Rental Bikes Deployment
 
