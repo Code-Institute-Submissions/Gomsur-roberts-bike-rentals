@@ -4,6 +4,8 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>
 
@@ -13,183 +15,163 @@
 
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
 
-</head> 
+</head>
 
 <body>
 
-<div>
+    {% include 'navbar.html' %}
 
-    <a href="/home">
-        <button type="button" class="btn btn-primary">
-            Home
-        </button>
-    </a>
+    <h1> Robert's Bike Rentals > Bike Accessories </h1>
 
-    <a href="/about-roberts-rentals">
-        <button type="button" class="btn btn-primary">
-            About
-        </button>
-    </a>
+    <div>
 
-    <a href="/bike-accessories">
-        <button type="button" class="btn btn-primary">
-            Bike Accessories
-        </button>
-    </a>
+        <img src="{% static 'img/cover.jpg' %}" alt="">
 
-    <a href="/bike/">
-        <button type="button" class="btn btn-primary">
-            Reserve Bike
-        </button>
-    </a>
+    </div>
 
-    <a href="/accounts/login/">
-        <button type="button" class="btn btn-secondary">
-            Log In
-        </button>
-    </a>
+    <p>
 
-</div>
+        Keep your rental in good condition with our custom line of products to bring with you on your bike adventure.
+        Browse our collection of bike accessories to maintain and repair your bike.
 
-<h1> Robert's Bike Rentals > Bike Accessories </h1>
+    </p>
 
-<div>
+    <div>
 
-    <img src="{% static 'img/cover.jpg' %}" alt="">
+        <table id="table" class="center products">
 
-</div>
+            <thead>
 
-<p>
+                <th></th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
 
-Keep your rental in good condition with our custom line of products to bring with you on your bike adventure. Browse our collection of bike accessories to maintain and repair your bike.
+            </thead>
 
-</p>
+            <tbody>
 
-<div>
 
-<table id="table" class="center products">
 
-    <thead>
+                <tr>
 
- <th></th>        <th>Name</th>
-        <th>Description</th>
-        <th>Price</th>
+                    <td>
 
-    </thead>
+                    </td>
 
-    <tbody>
+                    <td>
 
+                        Aluminum Bike Stand
 
+                    </td>
 
-<tr>
+                    <td>
 
-    <td>
+                        Our sturdy and reliable bike stand securely holds your bike in place, allowing you to make
+                        critical repairs with ease. Its aluminum construction ensures durability while remaining
+                        lightweight, making it a perfect choice for both professionals and hobbyists.
 
-    </td>
+                    </td>
 
-    <td>
+                    <td>
 
- Aluminum Bike Stand
+                        €339.99
 
-    </td>
+                    </td>
 
-    <td>
+                </tr>
 
-Our sturdy and reliable bike stand securely holds your bike in place, allowing you to make critical repairs with ease. Its aluminum construction ensures durability while remaining lightweight, making it a perfect choice for both professionals and hobbyists.
+                <tr>
 
-    </td>
+                    <td></td>
 
-    <td>
+                    <td>
 
-        €339.99
+                        Hydraulic Pump
 
-    </td>
+                    </td>
 
-</tr>
+                    <td>
 
-<tr>
+                        Level up your biking experience with our revolutionary Hydraulic Bike Pump. Say goodbye to sore
+                        arms and endless pumping! Our innovative pump utilizes hydraulic technology to effortlessly fill
+                        your bike tires with air.
 
-<td></td>
+                    </td>
 
-    <td>
+                    <td>€39.99 </td>
 
-Hydraulic Pump
+                </tr>
 
-    </td>
+                <tr>
 
-<td>
+                    <td></td>
 
-Level up your biking experience with our revolutionary Hydraulic Bike Pump. Say goodbye to sore arms and endless pumping! Our innovative pump utilizes hydraulic technology to effortlessly fill your bike tires with air.
+                    <td>
 
-</td>
+                        Bike Gear Lubricant
 
-<td>€39.99 </td>
+                    </td>
 
-</tr>     
 
-<tr>
+                    <td>
 
-<td></td>
+                        on't let rusty gears slow you down or ruin your biking experience. Our specially formulated
+                        lubricant is designed to keep your bike gears in top-notch shape, ensuring smooth and effortless
+                        gear changes every time you hit the road.
 
-    <td>
+                    </td>
 
-Bike Gear Lubricant
+                    <td>€19.99</td>
 
-    </td>
+                </tr>
 
+                <tr>
 
-<td> 
+                    <td></td>
 
-on't let rusty gears slow you down or ruin your biking experience. Our specially formulated lubricant is designed to keep your bike gears in top-notch shape, ensuring smooth and effortless gear changes every time you hit the road.
+                    <td>
 
- </td>
+                        Bike Repair Tape
 
-<td>€19.99</td>
+                    </td>
 
-</tr>
 
-<tr>
+                    <td>
 
-<td></td>
+                        the ultimate solution for quick and hassle-free bike repairs. Whether you're on a leisurely ride
+                        or in the middle of an epic adventure, this special emergency tape will have you back on track
+                        in no time.
 
-    <td>
+                    </td>
 
-Bike Repair Tape
+                    <td>€19.99</td>
 
-    </td>
+                </tr>
 
+            </tbody>
 
-<td>
+        </table>
 
-the ultimate solution for quick and hassle-free bike repairs. Whether you're on a leisurely ride or in the middle of an epic adventure, this special emergency tape will have you back on track in no time.
+    </div>
 
-</td>
+    <div>
 
-<td>€19.99</td>
+        <a href="/bike/">
+            <button type="button" class="btn btn-primary">
+                Reserve Bike
+            </button>
+        </a>
 
-</tr>
+    </div>
 
-    </tbody>
+    <div class="footer">
 
-</table>
+        Robert's Bike Rental created by <a href="https://github.com/gomsur">Robert</a>. <a
+            href="https://www.freepik.com/free-photo/cyclist-sunny-day-bike-adventure-travel-photo_3972810.htm#query=bike&position=0&from_view=search&track=sph">Image
+            by jcomp</a> on Freepik.
 
-</div>
-
-<div>
-
-    <a href="/bike/">
-        <button type="button" class="btn btn-primary">
-            Reserve Bike
-        </button>
-    </a>
-
-</div>
-
-<div class="footer">
-
-Robert's Bike Rental created by <a href="https://github.com/gomsur">Robert</a>. <a href="https://www.freepik.com/free-photo/cyclist-sunny-day-bike-adventure-travel-photo_3972810.htm#query=bike&position=0&from_view=search&track=sph">Image by jcomp</a> on Freepik.
-
-</div>
+    </div>
 
 </body>
 

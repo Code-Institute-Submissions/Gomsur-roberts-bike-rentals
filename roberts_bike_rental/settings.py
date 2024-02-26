@@ -25,7 +25,7 @@ SECRET_KEY = '7!%*_%*0x9*#-k*1$b$^dax14hu2tazzrvk5tvj@#7vlg*h0ni'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['104.248.100.154','localhost']
+ALLOWED_HOSTS = ['104.248.100.154','localhost', '127.0.0.1']
 
 # Application definition
 
@@ -92,16 +92,25 @@ WSGI_APPLICATION = 'roberts_bike_rental.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'robertsbikerentals',
+#         'USER':'robertsbikerentals',
+#         'PASSWORD':'robertsbikerentals',
+#         'HOST':'207.154.248.72',
+#         'PORT':'5432'
+#     }
+# }
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'robertsbikerentals',
-        'USER':'robertsbikerentals',
-        'PASSWORD':'robertsbikerentals',
-        'HOST':'207.154.248.72',
-        'PORT':'5432'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+    
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -138,11 +147,11 @@ USE_TZ = True
 
 ##########################################
 
-LOGIN_REDIRECT_URL = "home"
+LOGIN_REDIRECT_URL = "/"
 
-LOGOUT_REDIRECT_URL = 'https://google.com/'
+LOGOUT_REDIRECT_URL = '/'
 
-SESSION_COOKIE_AGE = 30
+SESSION_COOKIE_AGE = 1800  # 30 minutes
 
 #SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
@@ -162,4 +171,8 @@ STATICFILES_DIRS = [
 
 ]
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
 ##########################################
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

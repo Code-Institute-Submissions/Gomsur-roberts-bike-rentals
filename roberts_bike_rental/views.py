@@ -9,7 +9,7 @@ from django.template import loader
 
 def home(request):
 
-    print("home home")
+    # print("home home")
 
     template = loader.get_template("index.html")
 

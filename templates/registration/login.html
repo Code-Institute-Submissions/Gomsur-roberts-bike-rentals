@@ -4,6 +4,8 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>
 
@@ -13,43 +15,79 @@
 
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
 
+    <style>
+    .login-form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .btn-primary2 {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #007bff;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .btn-primary2:hover {
+        background-color: #0056b3;
+    }
+
+    .message {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .message a {
+        color: #007bff;
+    }
+
+    .message a:hover {
+        text-decoration: none;
+        color: #0056b3;
+    }
+    .login-form label {
+        float: left;
+    }
+
+    .login-form label small {
+        float: left;
+    }
+    .login-form input::placeholder {
+        text-align: left;
+        color: #888;
+        font-style: italic;
+    }
+    input[type="text"],
+        input[type="password"] {
+            text-align: left!important; /* Align input text to the left */
+        }
+</style>
+
 </head> 
 
 <body>
 
-<div>
-
-    <a href="/home">
-        <button type="button" class="btn btn-primary">
-            Home
-        </button>
-    </a>
-
-    <a href="/about-roberts-rentals">
-        <button type="button" class="btn btn-primary">
-            About
-        </button>
-    </a>
-
-    <a href="/bike-accessories">
-        <button type="button" class="btn btn-primary">
-            Bike Accessories
-        </button>
-    </a>
-
-    <a href="/bike/">
-        <button type="button" class="btn btn-primary">
-            Reserve Bike
-        </button>
-    </a>
-
-    <a href="/accounts/login/">
-        <button type="button" class="btn btn-secondary">
-            Log In
-        </button>
-    </a>
-
-</div>
+    {% include 'navbar.html' %}
 
 <h1> Robert's Bike Rentals > Log In </h1>
 
@@ -58,40 +96,28 @@
     <img src="{% static 'img/cyclist-sunny-day-bike-adventure-travel-photo.jpg' %}" height=480 width=640>
 
 </div>
-
-<form method="POST" action="">
-
+<br>
+<form method="POST" action="" class="login-form">
+    {% csrf_token %}
     {{ form.non_field_errors }}
 
-    {% csrf_token %}
-
-    <div>
-
-        <h3> user name </h3>
-
-        <input type="text" name="username">
-
+    <div class="form-group">
+        <label for="username"><h3>Username</h3></label>
+        <input type="text" name="username" id="username" class="form-control" placeholder="Enter your username">
     </div>
 
-    <div>
-
-        <h3> password </h3>
-
-        <input type="password" name="password">
-
+    <div class="form-group">
+        <label for="password"><h3>Password</h3></label>
+        <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password">
     </div>
 
-    <div>
-
-        <br>
-
-        <button type="submit" class="btn btn-secondary"> Log In </button>
-
-        <p class="message">Don't have an account? <a href="/accounts/signup/">Create Account</a>.</p>
-
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary2 btn-block">Log In</button>
     </div>
 
+    <p class="message">Don't have an account? <a href="/accounts/signup/">Create Account</a>.</p>
 </form>
+<br>
 <div class="footer">
 
 Robert's Bike Rental created by <a href="https://github.com/gomsur">Robert</a>. <a href="https://www.freepik.com/free-photo/cyclist-sunny-day-bike-adventure-travel-photo_3972810.htm#query=bike&position=0&from_view=search&track=sph">Image by jcomp</a> on Freepik.

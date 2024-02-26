@@ -1,0 +1,114 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Edit Profile / Robert's Bike Rentals
+
+    </title>
+
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+    <style>
+        .profile-form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-align: left; /* Align label text to the left */
+        }
+
+        input[type="text"],
+        input[type="date"],
+        textarea,
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            text-align: left!important; /* Align input text to the left */
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .invalid-feedback {
+            color: #dc3545;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    {% include 'navbar.html' %}
+    <br>
+    <div class="profile-form container">
+        <h2>Edit Profile</h2>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {% for field in form %}
+            <div class="form-group">
+                <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                {{ field }}
+                {% if field.errors %}
+                <div class="invalid-feedback">
+                    {% for error in field.errors %}
+                    {{ error }}
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+        </form>
+    </div>
+
+    <div class="footer">
+
+        Robert's Bike Rental created by <a href="https://github.com/gomsur">Robert</a>. <a
+            href="https://www.freepik.com/free-photo/cyclist-sunny-day-bike-adventure-travel-photo_3972810.htm#query=bike&position=0&from_view=search&track=sph">Image
+            by jcomp</a> on Freepik.
+
+    </div>
+</body>
+
+</html>

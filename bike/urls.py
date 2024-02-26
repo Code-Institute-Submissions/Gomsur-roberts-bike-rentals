@@ -7,6 +7,11 @@ urlpatterns = [
 
     path('', views.custom, name="custom"),
 
+    path('profile/', views.profile_view, name='profile'),
+    path('edit-profile/', views.edit_profile, name='edit_profile'),
+    path('cancel-rental/<int:rental_id>/', views.cancel_rental_view, name='cancel_rental'),
+    path('extend_rental/<int:rental_id>/', views.extend_rental_view, name='extend_rental'),
+
     path('<int:pk>/', BikeDetail.as_view(), name='retrieve-bike'),
 
     path("reserve/<int:pk>/<int:user_pk>", views.reserveBike, name="reserve-bike"),

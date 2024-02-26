@@ -1,0 +1,113 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile / Robert's Bike Rentals</title>
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+    <style>
+        .text-left {
+            text-align: left!important;
+            /* white-space: nowrap; */
+            width: 100%;
+            margin-left: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 shadow p-4">
+                <h2>Profile Details</h2>
+                <hr>
+                <img src="{{ user.profile.profile_picture.url }}" alt="Profile Picture" class="img-fluid rounded-circle mb-3" style="max-width: 200px; max-height: 200px;">
+                <p class="mb-1 text-left"><strong>Full Name:</strong> {{ profile.full_name }}</p>
+                <p class="mb-1 text-left"><strong>Username:</strong> {{ request.user }}</p>
+                <p class="mb-1 text-left"><strong>Bio:</strong> {{ profile.bio }}</p>
+                <p class="mb-1 text-left"><strong>Birth Date:</strong> {{ profile.birth_date }}</p>
+                <p class="mb-1 text-left"><strong>Phone Number:</strong> {{ profile.phone_number }}</p>
+                <p class="mb-1 text-left"><strong>Address:</strong> {{ profile.address }}</p>
+                <p class="mb-1 text-left"><strong>City:</strong> {{ profile.city }}</p>
+                <p class="mb-1 text-left"><strong>State:</strong> {{ profile.state }}</p>
+                <p class="mb-2 text-left"><strong>Zip Code:</strong> {{ profile.zip_code }}</p>
+                <p class=""><a href="{% url 'edit_profile' %}" class="btn btn-primary">Edit Profile</a></p>
+            </div>
+            
+            <div class="col-md-8 shadow p-4">
+                <h2>Your Bike Rentals</h2>
+                <hr>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">B_Name</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">R_Price</th>
+                                <th scope="col">C_R_Period</th>
+                                <th scope="col">Extend</th>
+                                <th scope="col">Cancel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for rental in bike_rentals %}
+                            <tr>
+                                <td style="white-space: nowrap;">{{ rental.name }}</td>
+                                <td style="white-space: nowrap;">{{ rental.description|truncatechars:15 }}</td>
+                                <td>&euro; {{ rental.rental_price }}</td>
+                                <td>{{ rental.rental_period }} days</td>
+                                <td>
+                                    {% if rental.rented_user_id == user.pk %}
+                                    <form method="POST" action="{% url 'extend_rental' rental.id %}" class="d-inline">
+                                        {% csrf_token %}
+                                        <div class="input-group">
+                                            <input type="number" id="new_rental_period_{{ rental.id }}" name="new_rental_period" min="1" class="form-control" placeholder="Extend Rental (days)" required>
+                                            <!-- <div class="input-group-append"> -->
+                                                <button type="submit" class="btn btn-primary btn-sm">E_Rental</button>
+                                            <!-- </div> -->
+                                        </div>
+                                    </form>
+                                    {% elif rental.rented_user_id %}
+                                    <button type="button" class="btn btn-secondary btn-sm" disabled>Not Available</button>
+                                    {% else %}
+                                    <a href="{% url 'reserve-bike' rental.id user.pk %}" class="btn btn-primary btn-sm">Rent Bike</a>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    {% if rental.rented_user_id == user.pk %}
+                                    <form method="POST" action="{% url 'cancel_rental' rental.id %}" class="d-inline">
+                                        {% csrf_token %}
+                                        <div class="input-group">
+                                            <input type="hidden" name="rented_user_id" value="0">
+                                            <button type="submit" class="btn btn-warning btn-sm">X_Rental</button>
+                                        </div>
+                                    </form>
+                                    {% else %}
+                                    <!-- Placeholder for Cancel button if not rented by the user -->
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% empty %}
+                            <tr>
+                                <td colspan="6">No bike rentals found.</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Robert's Bike Rental created by <a href="https://github.com/gomsur">Robert</a>. Image by <a href="https://www.freepik.com/free-photo/cyclist-sunny-day-bike-adventure-travel-photo_3972810.htm#query=bike&position=0&from_view=search&track=sph">jcomp</a> on Freepik.
+    </div>
+</body>
+
+</html>

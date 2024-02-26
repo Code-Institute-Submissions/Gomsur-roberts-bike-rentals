@@ -4,184 +4,75 @@
 <html lang="en">
 
 <head>
-
-    <title>
-
-        Reserve Bike / Robert's Bike Rentals
-
-    </title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve Bike / Robert's Bike Rentals</title>
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
-
-</head> 
+</head>
 
 <body>
+    {% include 'navbar.html' %}
 
+    <h1>Robert's Bike Rentals > Reserve Bike</h1>
 
-<div>
-
-    <a href="/home">
-        <button type="button" class="btn btn-primary">
-            Home
-        </button>
-    </a>
-
-    <a href="/about-roberts-rentals">
-        <button type="button" class="btn btn-primary">
-            About
-        </button>
-    </a>
-
-    <a href="/bike-accessories">
-        <button type="button" class="btn btn-primary">
-            Bike Accessories
-        </button>
-    </a>
-
-    <a href="/bike/">
-        <button type="button" class="btn btn-primary">
-            Reserve Bike
-        </button>
-    </a>
-
-    <a href="/accounts/login/">
-        <button type="button" class="btn btn-secondary">
-            Log In
-        </button>
-    </a>
-
-</div>
-
-
-<h1> Robert's Bike Rentals > Reserve Bike </h1>
-
-<div>
-
-    <img src="{% static 'img/bicycles-workshop.jpg' %}" height=480 width=640>
-
-</div>
-
-<p>
-
-Use this page to view our rental bikes. You can see which bikes are already reserved and which bikes are available for rent.
-
-</p>
-
-<div>
-                      <table id="rent-payment-table" class="center products">
-                        <thead>
-                          <tr>						                            
-							
-							
-                            
-							<th>Name</th>                           
-
-<th>Description</th>    
-                            <th>Rental Price</th>
-                           <!--  <th>Rental User ID</th>
-						-->
-                          </tr>
-                        </thead>
-                        <tbody >     
-
-{% if status_message %}
-
-    <h4>
-
-        {{ status_message }}
-
-    </h4>
-
-{% endif %}
-                   					  
-						{% if latest_question_list %}
-
-    
-
-    {% for question in latest_question_list %}
-
-    
-<tr>
-
-    <td class=""> {{ question.name }} </td>
-    <td class=""> {{ question.description }} </td>
-    <td class=""> &euro; {{ question.rental_price }} </td>
-  <!--  <td class=""> {{ question.rented_user_id }} </td>
--->
-
-{% if question.rented_user_id == user.pk %}
-
-    <td class="">
-
-        <a href="/bike/return/{{question.id}}/{{user.pk}}">
-
-            <button type="button" class="btn btn-secondary">
-
-                Return {{ question.name }}
-
-            </button>
-
-        </a>
-
-    </td>
-
-{% elif question.rented_user_id == 0 %}
-
-    <td class="">
-
-        <a href="/bike/reserve/{{question.id}}/{{user.pk}}">
-
-            <button type="button" class="btn btn-primary">
-
-                Reserve {{ question.name }}
-
-            </button>
-
-        </a>
-
-    </td>
-
-{% else %}
-
-    <td class="">
-
-            <button type="button" class="disabled">
-
-                Not Available
-
-            </button>
-
-    </td>
-
-{% endif %}
-
-
-
-
-</tr>
-
-
-    {% endfor %}
-
-    </ul>
-
-{% else %}
-
-    <h6 class="notification">No bikes are available for rent.</h6>
-
-
-{% endif %}
-  
-	      </tbody>
-                      </table>
+    <div>
+        <img src="{% static 'img/bicycles-workshop.jpg' %}" height=480 width=640>
     </div>
-    		
 
-	<div class="footer">
+    <p>Use this page to view our rental bikes. You can see which bikes are already reserved and which bikes are available for rent.</p>
 
-Robert's Bike Rental created by <a href="https://github.com/gomsur">Robert</a>. <a href="https://www.freepik.com/free-photo/cyclist-sunny-day-bike-adventure-travel-photo_3972810.htm#query=bike&position=0&from_view=search&track=sph">Image by jcomp</a> on Freepik.
+    <div>
+        <table id="rent-payment-table" class="center products">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Rental Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% if status_message %}
+                    <h4>{{ status_message }}</h4>
+                {% endif %}
 
-</div>
+                {% if latest_question_list %}
+                    {% for question in latest_question_list %}
+                        <tr>
+                            <td>{{ question.name }}</td>
+                            <td>{{ question.description }}</td>
+                            <td>&euro; {{ question.rental_price }}</td>
+                            {% if question.rented_user_id == user.pk %}
+                                <td>
+                                    <a href="/bike/return/{{ question.id }}/{{ user.pk }}">
+                                        <button type="button" class="btn btn-secondary">Return {{ question.name }}</button>
+                                    </a>
+                                </td>
+                            {% elif question.rented_user_id %}
+                                <td>
+                                    <button type="button" class="btn btn-dark" disabled>Not Available</button>
+                                </td>
+                            {% else %}
+                                <td>
+                                    <a href="/bike/reserve/{{ question.id }}/{{ user.pk }}">
+                                        <button type="button" class="btn btn-primary">Reserve {{ question.name }}</button>
+                                    </a>
+                                </td>
+                            {% endif %}
+                        </tr>
+                    {% endfor %}
+                {% else %}
+                    <tr>
+                        <td colspan="4">No bikes are available for rent.</td>
+                    </tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        Robert's Bike Rental created by <a href="https://github.com/gomsur">Robert</a>. <a href="https://www.freepik.com/free-photo/cyclist-sunny-day-bike-adventure-travel-photo_3972810.htm#query=bike&position=0&from_view=search&track=sph">Image by jcomp</a> on Freepik.
+    </div>
 </body>
 
 </html>

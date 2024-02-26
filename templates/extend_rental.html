@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extend Rental / Robert's Bike Rentals</title>
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <h1> Robert's Bike Rentals > Extend Rental </h1>
+    <div class="container">
+        <h2>Extend Rental for {{ rental.name }}</h2>
+        <p>Current Rental Period: {{ rental.rental_period }} days</p>
+        {% if error_message %}
+        <div class="alert alert-danger" role="alert">
+            {{ error_message }}
+        </div>
+        {% endif %}
+        <form method="POST">
+            {% csrf_token %}
+            <label for="new_rental_period">New Rental Period (days):</label>
+            <input type="number" id="new_rental_period" name="new_rental_period" value="{{ rental.rental_period }}" min="1" required>
+            <input type="submit" value="Extend Rental" class="btn btn-primary mt-3">
+        </form>
+    </div>
+    
+
+    <div class="footer">
+
+        Robert's Bike Rental created by <a href="https://github.com/gomsur">Robert</a>. <a href="https://www.freepik.com/free-photo/cyclist-sunny-day-bike-adventure-travel-photo_3972810.htm#query=bike&position=0&from_view=search&track=sph">Image by jcomp</a> on Freepik.
+        
+    </div>
+</body>
+</html>
