@@ -298,55 +298,31 @@ version: "3"
 
 services:
 
-    roberts-bike-rentals-postgres:
+  roberts-bike-rentals-sqlite:
 
-        container_name: roberts-bike-rentals-postgres
-        
-        image: postgres:14.1-alpine
+    container_name: roberts-bike-rentals-sqlite
 
-        restart: always
+    image: python:3.9-alpine  # Using Python image with SQLite support
 
-        user: root
+    restart: always
 
-        environment:
+    command: >
+      /bin/sh -c "python manage.py makemigrations &&
+                  python manage.py migrate &&
+                  python manage.py runserver 0.0.0.0:8000"
 
-            - POSTGRES_USER=robertsbikerentals
+    ports:
+      - "8000:8000"
 
-            - POSTGRES_DB=robertsbikerentals
+    volumes:
+      - ./robertsbikerentals:/app  # Mount your Django project directory
 
-            - POSTGRES_PASSWORD=roberts!bike!rentals
-
-        ports:
-
-            - "5432:5432"
-
-        volumes: 
-
-            - ./volume/postres:/var/lib/postgresql/data
- 
-    roberts-bike-rentals-pgadmin4:
-
-        container_name: roberts-bike-rentals-pgadmin4
-
-        user: root
-
-        image: dpage/pgadmin4
-        
-        restart: always
-
-        ports:
-        
-            - "5480:80"
-            
-        environment:
-        
-            PGADMIN_DEFAULT_EMAIL: robert@robertsbikerentals.com
-            
-            PGADMIN_DEFAULT_PASSWORD: roberts!bike!rentals
-
-        volumes:
-        
-            - ./volume/pgadmin4:/var/lib/pgadmin            
+    environment:
+      - DJANGO_SECRET_KEY=your_secret_key_here
+      - DJANGO_DEBUG=True  # Set to False in production
+      - DJANGO_ALLOWED_HOSTS=8000-gomsur-robertsbikerenta-teos8a0p2jr.ws-eu108.gitpod.io,localhost,127.0.0.1
+      - DJANGO_DB_ENGINE=django.db.backends.sqlite3
+      - DJANGO_DB_NAME=/app/db.sqlite3  # Path to SQLite database file
 ```
 
 running the docker-compose script to start the database.
