@@ -277,10 +277,12 @@ There's no known bugs on the site.
 
 ## Features
 
-There is a couple of features that could be implemented such as:
-* More bikes
+There is a couple of features that could be implemented
+* More bikes in the product category
 * Adding more products and images to accessories page
-* Add a payment method for booking
+* Add a payment method for reserving a bike
+* Possibility to add a blog page to the site to engage the customers
+* Start a loyalty club to gather the bike interested people
 
 ## Robert's Rental Bikes Deployment
 
