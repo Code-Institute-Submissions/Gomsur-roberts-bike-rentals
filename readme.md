@@ -418,6 +418,7 @@ The Robert's rental bike application was build w/ help from the following resour
 |[Internet Tutorials](/docs/tutorials.md)|various tutorials from the internet with how-to help and information|
 |[Stock Imagery](/docs/attribution.md)|free stock imagery from the internet, with attribution.|
 |[TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)|github wiki toc generator.|
+|[Jigsaw validator](https://jigsaw.w3.org/css-validator/)|Validator CSS and HTML|
 
 ## Quick Start Installation
 
