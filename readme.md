@@ -223,6 +223,10 @@ the reserve page allows the user to see each of the bikes in the store and it's 
 
 ![reserve page](/docs/screenshots/reserve.png)
 
+### Cancel Or Extend Bike Rental
+
+The bikes rented can be managed from the profile page to either extend the rental period or cancel the rental completely
+
 ### Manage Bikes Page
 
 the manage bikes page allows a super user to see each of the bikes in the store and it's rentail availability. the manage bikes page allows a super user to return a rental reservation made by a customer.
