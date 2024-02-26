@@ -45,6 +45,7 @@ Click the link below to access Robert's Bike Rentals and the bike collection.
   * [Agile Project Management](#agile-project-management)
   * [Known Bugs](#known-bugs)
   * [Validation](#validation)
+  * [Testing](#testing)
   * [Features](#features)
   * [Responsive](#responsive)
   * [Robert's Rental Bikes Deployment](#robert-s-rental-bikes-deployment)
@@ -275,13 +276,19 @@ Click the link below to view the agile board.
 
 ## Known Bugs
 
-For some reason I was not able to run the site in some specific responsiveness checkers
+For some reason I was not able to run the site in some specific responsiveness validators
 
 ## Validation
 
 For validating the code I have used Jigsaw and JSHint
+The code have been run and is showing no errors
 ![CSS](/docs/screenshots/css-validator.png)
 ![HTML](/docs/screenshots/html%20validator.png)
+
+## Testing
+
+Manual testing have been done and and documented under projects
+[Testing](https://github.com/users/Gomsur/projects/9)
 
 
 ## Features
