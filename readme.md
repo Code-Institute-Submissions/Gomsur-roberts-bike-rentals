@@ -274,7 +274,8 @@ Click the link below to view the agile board.
 
 ## Known Bugs
 
-There's no known bugs on the site.
+For some reason I was not able to run the site in some specific responsiveness checkers
+
 
 ## Features
 
@@ -289,6 +290,8 @@ There is a couple of features that could be implemented
 
 Responsiveness was checked with [Browserstack](https://www.browserstack.com/responsive)
 ![phone](/docs/screenshots/responsivephone.png)
+![ipad](/docs/screenshots/responsiveipad.png)
+![computer](/docs/screenshots/responsivecomputer.png)
 
 ## Robert's Rental Bikes Deployment
 
