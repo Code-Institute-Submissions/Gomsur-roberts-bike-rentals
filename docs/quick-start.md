@@ -4,68 +4,35 @@ You can run Robert's Rental Bikes at home. Follow the instructions below on an U
 
 ![Robert's Bike Rental](http://104.248.100.154/static/img/bike-shop-concept-with-bicycles.jpg)
 
-### postgres database
+### SQLite database
 
-you will need to start a postgres database running before starting the app. A postgress database is used for backend storage.
+you will need to start a SQLite database running before starting the app. A SQLite database is used for backend storage.
 
 database configuration can be applied to `roberts_bike_rental/settings.py`.
 
-The postgress database uses docker compose to run:
+The SQLite database uses docker compose to run:
 
 ```yaml
 version: "3"
 
 services:
-
-    roberts-bike-rentals-postgres:
-
-        container_name: roberts-bike-rentals-postgres
-        
-        image: postgres:14.1-alpine
-
-        restart: always
-
-        user: root
-
-        environment:
-
-            - POSTGRES_USER=robertsbikerentals
-
-            - POSTGRES_DB=robertsbikerentals
-
-            - POSTGRES_PASSWORD=roberts!bike!rentals
-
-        ports:
-
-            - "5432:5432"
-
-        volumes: 
-
-            - ./volume/postres:/var/lib/postgresql/data
- 
-    roberts-bike-rentals-pgadmin4:
-
-        container_name: roberts-bike-rentals-pgadmin4
-
-        user: root
-
-        image: dpage/pgadmin4
-        
-        restart: always
-
-        ports:
-        
-            - "5480:80"
-            
-        environment:
-        
-            PGADMIN_DEFAULT_EMAIL: robert@robertsbikerentals.com
-            
-            PGADMIN_DEFAULT_PASSWORD: roberts!bike!rentals
-
-        volumes:
-        
-            - ./volume/pgadmin4:/var/lib/pgadmin            
+  roberts-bike-rentals-sqlite:
+    container_name: roberts-bike-rentals-sqlite
+    image: python:3.9-alpine  # Using Python image with SQLite support
+    restart: always
+    command: >
+      /bin/sh -c "python manage.py migrate &&
+                  python manage.py runserver 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./roberts-bike-rentals:/app  # Mount your Django project directory
+    environment:
+      - DJANGO_SECRET_KEY=your_secret_key_here
+      - DJANGO_DEBUG=True  # Set to False in production
+      - DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1
+      - DJANGO_DB_ENGINE=django.db.backends.sqlite3
+      - DJANGO_DB_NAME=/app/db.sqlite3  # Path to SQLite database file           
 ```
 
 running the docker-compose script to start the database.
@@ -119,6 +86,7 @@ set -xe \
      && pip install djangorestframework \
      && pip install django-cors-headers \
      && pip install psycopg2-binary \
+     && pip install Pillow \
      && pip install django-rest-auth-forked
 ```
 
