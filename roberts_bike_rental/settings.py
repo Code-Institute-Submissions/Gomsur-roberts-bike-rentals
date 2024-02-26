@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '7!%*_%*0x9*#-k*1$b$^dax14hu2tazzrvk5tvj@#7vlg*h0ni'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-ALLOWED_HOSTS = ['*']
-#ALLOWED_HOSTS = ['roberts-bistro-0918c883d3bc.herokuapp.com', '104.248.100.154', 'localhost', '127.0.0.1', '8000-gomsur-robertsbikerenta-teos8a0p2jr.ws-eu108.gitpod.io', 'roberts-bike-rental.herokuapp.com', '*.herokuapp.com']
+DEBUG = True
+
+ALLOWED_HOSTS = ['104.248.100.154', 'localhost', '127.0.0.1', '8000-gomsur-robertsbikerenta-teos8a0p2jr.ws-eu108.gitpod.io']
 CSRF_COOKIE_DOMAIN = 'gomsur-robertsbikerenta-teos8a0p2jr.ws-eu108.gitpod.io'
 CSRF_COOKIE_SECURE = True
 CSRF_TRUSTED_ORIGINS = ['https://8000-gomsur-robertsbikerenta-teos8a0p2jr.ws-eu108.gitpod.io']
@@ -49,7 +48,6 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -116,17 +114,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'bike',
-#         'USER': 'postgres',
-#         'PASSWORD': 'omar',
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#     }
-# }  
+    
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -180,8 +168,7 @@ SESSION_SAVE_EVERY_REQUEST = True # "False" by default
 ## https://www.w3schools.com/django/django_add_css_file_global.php
 
 STATIC_URL = 'static/'
-#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
 STATICFILES_DIRS = [
 
     BASE_DIR / "static"
@@ -191,13 +178,5 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-#import django_heroku
-
-
-
 ##########################################
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-#django_heroku.settings(locals())
