@@ -36,6 +36,7 @@ Click the link below to access Robert's Bike Rentals and the bike collection.
     + [Login Page](#login-page)
     + [Register Page](#register-page)
     + [Reserve Bikes Page](#reserve-bikes-page)
+    + [bikesrented](#bikesrented-page)
     + [Manage Bikes Page](#manage-bikes-page)
   * [Security For Robert's Bike Rentals](#security-for-robert-s-bike-rentals)
     + [Super Admin Users](#super-admin-users)
@@ -226,6 +227,8 @@ the reserve page allows the user to see each of the bikes in the store and it's 
 ### Cancel Or Extend Bike Rental
 
 The bikes rented can be managed from the profile page to either extend the rental period or cancel the rental completely
+
+![bikesrented](/docs/screenshots/bikesrented.png)
 
 ### Manage Bikes Page
 
