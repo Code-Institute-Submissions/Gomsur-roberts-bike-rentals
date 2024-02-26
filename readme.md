@@ -280,8 +280,8 @@ For some reason I was not able to run the site in some specific responsiveness c
 ## Validation
 
 For validating the code I have used Jigsaw and JSHint
-[CSS](/docs/screenshots/css-validator.png)
-[HTML](/docs/screenshots/html%20validator.png)
+![CSS](/docs/screenshots/css-validator.png)
+![HTML](/docs/screenshots/html%20validator.png)
 
 
 ## Features
