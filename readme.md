@@ -289,7 +289,7 @@ The code have been run and is showing no errors
 
 ## Testing
 
-Manual testing have been done and and documented under projects
+Manual testing have been done and and documented under projects with images and text
 [Testing](https://github.com/users/Gomsur/projects/9)
 
 
@@ -300,7 +300,7 @@ There is a couple of features that could be implemented
 * Adding more products and images to accessories page
 * Add a payment method for reserving a bike
 * Possibility to add a blog page to the site to engage the customers
-* Start a loyalty club to gather the bike interested people
+* Start a loyalty club to gather the bike interested people together
 
 ### Responsive
 
@@ -421,6 +421,7 @@ The Robert's rental bike application was build w/ help from the following resour
 |[Stock Imagery](/docs/attribution.md)|free stock imagery from the internet, with attribution.|
 |[TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)|github wiki toc generator.|
 |[Jigsaw validator](https://jigsaw.w3.org/css-validator/)|Validator CSS and HTML|
+|[Browserstack](https://www.browserstack.com/responsive)|Responsiveness|
 
 ## Quick Start Installation
 
