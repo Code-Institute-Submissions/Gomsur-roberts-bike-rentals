@@ -25,8 +25,11 @@ SECRET_KEY = '7!%*_%*0x9*#-k*1$b$^dax14hu2tazzrvk5tvj@#7vlg*h0ni'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['104.248.100.154','localhost', '127.0.0.1']
-
+ALLOWED_HOSTS = ['104.248.100.154', 'localhost', '127.0.0.1', '8000-gomsur-robertsbikerenta-teos8a0p2jr.ws-eu108.gitpod.io']
+CSRF_COOKIE_DOMAIN = 'gomsur-robertsbikerenta-teos8a0p2jr.ws-eu108.gitpod.io'
+CSRF_COOKIE_SECURE = True
+CSRF_TRUSTED_ORIGINS = ['https://8000-gomsur-robertsbikerenta-teos8a0p2jr.ws-eu108.gitpod.io']
+CSRF_COOKIE_DOMAIN = '8000-gomsur-robertsbikerenta-teos8a0p2jr.ws-eu108.gitpod.io'
 # Application definition
 
 INSTALLED_APPS = [
@@ -59,6 +62,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://sub.example.com",
     "http://localhost:8000",
     "http://127.0.0.1:9000",
+    'https://8000-gomsur-robertsbikerenta-teos8a0p2jr.ws-eu108.gitpod.io',
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True

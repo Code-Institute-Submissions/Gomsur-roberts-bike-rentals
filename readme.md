@@ -61,9 +61,9 @@ robert's rental bikes is built with the following technologies.
 
     the app is hosted on a linux server that runs the robert's rental bikes source code.
 
-* `database` { postgres pgadmin4 }
+* `database` { SQLite }
 
-    the app uses a postgres database. pgadmin is used to monitor and manage the postgres database.
+    the app uses a SQLite database. dbbrowser is used to monitor and manage the SQLite database.
 
 * `backend` { django4 } 
 
