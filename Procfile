@@ -1,1 +1,1 @@
-web: gunicorn roberts_bike_rental.wsgi
+web: gunicorn roberts_bike_rental.wsgi --log-file -
