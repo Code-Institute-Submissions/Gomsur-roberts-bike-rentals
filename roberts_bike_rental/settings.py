@@ -25,7 +25,7 @@ SECRET_KEY = '7!%*_%*0x9*#-k*1$b$^dax14hu2tazzrvk5tvj@#7vlg*h0ni'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['104.248.100.154', 'localhost', '127.0.0.1', '8000-gomsur-robertsbikerenta-teos8a0p2jr.ws-eu108.gitpod.io']
+ALLOWED_HOSTS = ['104.248.100.154', 'localhost', '127.0.0.1', '8000-gomsur-robertsbikerenta-teos8a0p2jr.ws-eu108.gitpod.io', 'roberts-bike-rental.herokuapp.com', '*.herokuapp.com']
 CSRF_COOKIE_DOMAIN = 'gomsur-robertsbikerenta-teos8a0p2jr.ws-eu108.gitpod.io'
 CSRF_COOKIE_SECURE = True
 CSRF_TRUSTED_ORIGINS = ['https://8000-gomsur-robertsbikerenta-teos8a0p2jr.ws-eu108.gitpod.io']
@@ -168,7 +168,7 @@ SESSION_SAVE_EVERY_REQUEST = True # "False" by default
 ## https://www.w3schools.com/django/django_add_css_file_global.php
 
 STATIC_URL = 'static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
 
     BASE_DIR / "static"
