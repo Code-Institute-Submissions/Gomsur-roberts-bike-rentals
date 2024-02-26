@@ -10,7 +10,7 @@ Robert's Bike Rentals is hosted in the Digital Ocean Cloud for public use.
 
 Click the link below to access Robert's Bike Rentals and the bike collection.
 
-[Access Robert's Rental Bikes](http://104.248.100.154/)
+[Access Robert's Rental Bikes](https://8000-gomsur-robertsbikerenta-teos8a0p2jr.ws-eu108.gitpod.io/)
 
 ## Table Of Contents
 
