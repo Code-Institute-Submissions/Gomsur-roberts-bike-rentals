@@ -36,7 +36,7 @@ Click the link below to access Robert's Bike Rentals and the bike collection.
     + [Login Page](#login-page)
     + [Register Page](#register-page)
     + [Reserve Bikes Page](#reserve-bikes-page)
-    + [bikesrented](#bikesrented-page)
+    + [bikesrented](####cancel-or-extend-bike-rental)
     + [Manage Bikes Page](#manage-bikes-page)
   * [Security For Robert's Bike Rentals](#security-for-robert-s-bike-rentals)
     + [Super Admin Users](#super-admin-users)
