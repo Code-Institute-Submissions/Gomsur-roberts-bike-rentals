@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '7!%*_%*0x9*#-k*1$b$^dax14hu2tazzrvk5tvj@#7vlg*h0ni'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['104.248.100.154', 'localhost', '127.0.0.1', '8000-gomsur-robertsbikerenta-teos8a0p2jr.ws-eu108.gitpod.io']
 CSRF_COOKIE_DOMAIN = 'gomsur-robertsbikerenta-teos8a0p2jr.ws-eu108.gitpod.io'

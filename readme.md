@@ -411,7 +411,7 @@ Click the link below to access Robert's Bike Rentals.
 
 ## Credits
 
-The Robert's rental bike application was build w/ help from the following resources across the internet.
+The Robert's rental bike application was build w/ help from the following resources across the internet and the help of my mentor Spencer who was amazing.
 
 | website | how the site helped |
 |---------|---------------------|
